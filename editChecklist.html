@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<!-- Framework CSS -->
+<link rel="stylesheet" href="css/maincss.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="css/screen.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="css/print.css" type="text/css" media="print" />
+<!--[if lt IE 8]><link rel="stylesheet" href="css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+<script type="text/javascript" language="javascript">
+
+function restrictScript(evt){var keyCodePress=(window.event)?event.keyCode:evt.which;if((keyCodePress==60)||(keyCodePress==62))
+return false;else
+return true;}
+
+var k=0;var i=0;var numberOfItems=0;var count=0;var flag=0;var totalDetails=0;var detailTxt="";function createCheckList()
+{var arr=document.getElementsByName("mycheckBOx");if(arr)
+{for(;count<arr.length;)
+{count++;i=count;numberOfItems=i;}
+k=numberOfItems;while(true)
+{var chkBox=document.getElementsByName("detailsList["+k+"]");if(chkBox.length>0)
+{k++;}
+else
+{break;}}}
+var re=/\s/g;;var aTextArea=document.getElementsByName('text')[0].value;var str=aTextArea.replace(re,"");if(str.length==0)
+{event.returnValue=false;return false;}
+var val=document.getElementsByName("text")[0].value;var qt="'";var value=val.replace(qt,"&#39;");for(i=0;i<val.length;i++){value=value.replace(qt,"&#39;");}
+if(document.getElementsByName('text')[0].value)
+{var para=document.getElementById("myDiv");var detailsTxt=document.createElement("TD");detailsTxt.className="fontnormal";var divIdName="my"+k+"Div";detailsTxt.setAttribute("id",divIdName);var textArea=document.getElementsByName('text')[0].value;detailsTxt.innerHTML+="<input type='checkbox'  name='checkBox("+k+")' value='"+value+"'>";var incrementer=0;while(incrementer<textArea.length)
+{var temp=incrementer;detailsTxt.innerHTML+=textArea.substr(temp,80);detailsTxt.innerHTML+="<br>";incrementer=incrementer+80;}
+detailsTxt.innerHTML+="<input type='hidden'  name='detailsList["+k+"]' value='"+value+"' >";para.appendChild(detailsTxt);k++;numberOfItems++;document.getElementsByName('text')[0].value="";}}
+function RemoveSelected()
+{var arr=document.getElementsByName("mycheckBOx");if(arr)
+{for(;count<arr.length;)
+{count++;i=count;numberOfItems=count;}}
+arrElements=document.getElementsByTagName("input");var iterator=i;for(x=0;x<arrElements.length;x++)
+{element=arrElements[x];if(element.checked)
+{element.parentNode.parentNode.removeChild(element.parentNode);x--;iterator--;numberOfItems--;}}}
+
+function isButtonRequired()
+{if(numberOfItems>0)
+{document.getElementById("removeButton").style.display="block";}
+else if(numberOfItems==0)
+{document.getElementById("removeButton").style.display="none";}}
+function setNumberOfPreviousItems()
+{var array=document.getElementsByName("numberOfPreviousItems");var counter;if(array!=null)
+for(counter=0;counter<array.length-1;counter++)
+{}
+i=i+counter;numberOfItems=i;}
+</script>
+</head>
+<body>
+<!-- Container Begins-->
+<div class="container">&nbsp;
+  <!--Header-->
+    <div class="topAlign append-1"><a href="yourSettings.html" title="Your Settings">Your Settings</a>&nbsp;|&nbsp;<a href="index.html">Log Out</a> </div>
+  <div><span class="logo"></span><span class="menu"><a href="home.html" class="tablightorange">Home</a><a href="clientsAcc.html" class="tablightorange">Clients and Accounts</a><a href="reports.html" class="tablightorange">Reports</a><a href="admin.html" class="taborange">Admin</a></span></div>
+  <div class="clear"></div>
+  <div class="orangeline">&nbsp;</div>
+    <!--  Left Sidebar Begins-->
+  <div class="sidebar ht750">
+    <p class="orangetab">Administrative Tasks</p>
+    <p class="paddingLeft fontBold">Search by client name, system ID or account number<br />
+      <input type="text"  />
+      <br />
+      <input class="buttn" type="button" name="search" value="Search" onclick="location.href='searched.html'"/>
+    </p>
+  </div>
+  <!--  Left Sidebar Ends-->
+  <!--  Main Content Begins-->  
+  <div class=" content leftMargin180">
+  	<form method="" action="" name="formname">
+    <div class="span-24">
+  		<div class="bluedivs paddingLeft"><a href="admin.html">Admin</a>&nbsp;/&nbsp;<a href="viewChecklists.html">View Checklists</a>&nbsp;/&nbsp;<a href="checklistDetails.html">ChecklistName</a></div>
+        <div class="clear">&nbsp;</div>
+    	<p class="font15"><span class="fontBold">ChecklistName</span>&nbsp;-&nbsp;<span class="orangeheading">Edit Checklist Information</span></p>
+        <div>Complete the fields below. Then click Preview. Click Cancel to return to Checklist Details without editing information. </div>
+        <div><span class="red">* </span>Fields marked with an asterisk are required. </div>
+        <p class="error" id="error1">Errors..............</p>
+        <p class="fontBold">Checklist details</p>
+        <div class="prepend-3  span-21 last">
+          	<div class="span-20 "><span class="span-5 rightAlign"><span class="red">* </span>Name</span><span class="span-4">&nbsp;:&nbsp;
+    				<input type="text" /></span>
+  			</div>
+          	<div class="span-20 "><span class="span-5 rightAlign"><span class="red">* </span>Type</span><span class="span-4">&nbsp;:&nbsp;
+    				<select name="select">
+                        <option >Center</option>
+                        <option >Group</option>
+                        <option >Client</option>
+                        <option >Loans</option>
+                        <option >Savings</option>
+				    </select></span>
+  			</div>
+        	<div class="span-20 "><span class="span-5 rightAlign"><span class="red">* </span>Displayed when moving into Status</span><span class="span-4">&nbsp;:&nbsp;
+   					<select name="select">
+                        <option >Active</option>
+                        <option >Inactive</option>
+				    </select></span>
+			</div>
+            <div class="span-20 "><span class="span-5 rightAlign"><span class="red">* </span>items </span><span class="span-10">Enter text for each item and click Add to save the item in the list below.<br />
+            	<TEXTAREA name="text" cols="50" rows="5" onKeyPress="return restrictScript(event);"></TEXTAREA><INPUT type="button" name="button" value="Add&gt;&gt;" onClick="createCheckList();isButtonRequired()"></span>
+			</div>
+            <div class="span-20 ">
+            	<div id="myDiv" class="span-18"></div>
+                <div id="removeButton" style="display: none; "><INPUT type="button" name="removeSelected" value="Remove Selected" onClick="RemoveSelected(); isButtonRequired()"></div>
+			</div>
+          </div>
+          <div class="clear">&nbsp;</div>
+          <hr />
+          <div class="prepend-9">
+            	<input class="buttn" type="button" name="preview" value="Preview" onclick="location.href='checklistPrev.html'"/>
+            	<input class="buttn2" type="button" name="cancel" value="Cancel" onclick="location.href='checklistDetails.html'"/>
+          </div>
+          <div class="clear">&nbsp;</div>
+   	</form> 
+  </div><!--Main Content Ends-->
+  <div class="footer">&nbsp;</div>
+</div><!--Container Ends-->
+</body>
+</html>

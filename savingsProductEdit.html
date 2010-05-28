@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<!-- Framework CSS -->
+<link rel="stylesheet" href="css/maincss.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="css/screen.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="css/print.css" type="text/css" media="print" />
+<!--[if lt IE 8]><link rel="stylesheet" href="css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+</head>
+<body>
+<!-- Container Begins-->
+<div class="container">&nbsp;
+  <!--Header-->
+    <div class="topAlign append-1"><a href="yourSettings.html" title="Your Settings">Your Settings</a>&nbsp;|&nbsp;<a href="index.html">Log Out</a> </div>
+  <div><span class="logo"></span><span class="menu"><a href="home.html" class="tablightorange">Home</a><a href="clientsAcc.html" class="tablightorange">Clients and Accounts</a><a href="reports.html" class="tablightorange">Reports</a><a href="admin.html" class="taborange">Admin</a></span></div>
+  <div class="clear"></div>
+  <div class="orangeline">&nbsp;</div>
+    <!--  Left Sidebar Begins-->
+  <div class="sidebar ht1350">
+    <p class="orangetab">Administrative Tasks</p>
+    <p class="paddingLeft fontBold">Search by client name, system ID or account number<br />
+      <input type="text"  />
+      <br />
+      <input class="buttn" type="button" name="search" value="Search" onclick="location.href='searched.html'"/>
+    </p>
+  </div>
+  <!--  Left Sidebar Ends-->
+  <!--  Main Content Begins-->  
+  <div class=" content leftMargin180">
+  	<form method="" action="" name="formname">
+    <div class="span-24">
+  		<div class="bluedivs paddingLeft"><a href="admin.html">Admin</a>&nbsp;/&nbsp;<a href="viewSavingsProducts.html">View Savings Products</a>&nbsp;/&nbsp;<a href="savingsProductDetails.html">SavingsProductName</a></div>
+        <div class="clear">&nbsp;</div>
+    	<p class="font15"><span class="fontBold">SavingsProductName</span>&nbsp;-&nbsp;<span class="orangeheading">Edit Savings product information.</span></p>
+        <div>Edit the fields below. Then click Preview. Click Cancel to return to Savings Product details without submitting information.</div>
+        <div><span class="red">* </span>Fields marked with an asterisk are required. </div>
+        <p class="error" id="error1">Errors..............</p>
+        <p class="fontBold">Savings product details </p>
+          <div class="prepend-3  span-21 last">
+          	<div class="span-20 "><span class="pull-3 span-8 rightAlign"><span class="red">* </span>Product instance name&nbsp;:&nbsp;</span><span class="span-4">
+    				<input type="text" /></span>
+  			</div>
+            <div class="span-20 "><span class="pull-3 span-8 rightAlign"><span class="red">* </span>Short name&nbsp;:&nbsp;</span><span class="span-4">
+    				<input type="text" size="3" /></span>
+  			</div>
+            <div class="span-20 "><span class="pull-3 span-8 rightAlign">Description&nbsp;:&nbsp;</span><span class="span-4">
+    				<textarea rows="7" cols="55"></textarea></span>
+  			</div>
+            
+        	<div class="span-20 "><span class="pull-3 span-8 rightAlign"><span class="red">* </span>Product category&nbsp;:&nbsp;</span><span class="span-4">
+   					<select name="select">
+      					<option >--Select--</option>
+				    </select></span>
+			</div>
+            <div class="span-20 last">
+            	<span class="pull-3 span-8 rightAlign"><span class="red"> * </span>From Date &nbsp;:</span>
+            	<span class="span-2"><input type="text" size="1" maxlength="2" />&nbsp;DD</span>
+            	<span class="span-2"><input type="text" size="1" maxlength="2" />&nbsp;MM</span>
+            	<span class="span-3"><input type="text" size="2" maxlength="4" />&nbsp;YYYY</span>
+        	</div>
+        	<div class="span-20 last">
+            	<span class="pull-3 span-8 rightAlign">End Date &nbsp;:</span><span class="span-2"><input type="text" size="1" maxlength="2" />&nbsp;DD</span>
+            	<span class="span-2"><input type="text" size="1" maxlength="2" />&nbsp;MM</span>
+            	<span class="span-3"><input type="text" size="2" maxlength="4" />&nbsp;YYYY</span>
+        	</div>
+            <div class="span-20 "><span class="pull-3 span-8 rightAlign"><span class="red">* </span>Applicable for&nbsp;:&nbsp;</span><span class="span-4">
+   					<select name="select">
+      					<option >--Select--</option>
+                        <option >Clients</option>
+                        <option >Groups</option>
+                        <option >Centers</option>
+				    </select></span>
+			</div>
+          </div>
+          <div class="clear">&nbsp;</div>
+          <p class="fontBold">Targeted Deposits and Withdrawal Restrictions </p>
+          <div class="prepend-3  span-21 last">
+          	<div class="span-20 "><span class="pull-3 span-8 rightAlign"><span class="red">* </span>Type of deposits&nbsp;:&nbsp;</span><span class="span-4">
+   					<select name="select" >
+      					<option >--Select--</option>
+                        <option >Mandatory</option>
+                        <option >Voluntary</option>
+				    </select></span>
+			</div>
+            <div class="span-20 "><span class="pull-3 span-8 rightAlign">Recommended Amount for Deposit&nbsp;:&nbsp;</span>
+            	<span class="span-4">&nbsp;</span>
+  			</div>
+            <div class="span-20 "><span class="pull-3 span-8 rightAlign"><span class="red">* </span>Mandatory amount for deposit&nbsp;:&nbsp;</span>
+            	<span class="span-4"><input type="text" /></span>
+  			</div>
+            <div class="span-20 "><span class="pull-3 span-8 rightAlign"><span class="red">* </span>Amount Applies to&nbsp;:&nbsp;</span><span class="span-4">
+   					<select name="select" disabled="disabled">
+      					<option >--Select--</option>
+                        <option >Per Individual</option>
+                        <option >Complete Group</option>
+				    </select></span>
+			</div>
+            <div class="span-20 "><span class="pull-3 span-8 rightAlign">Max amount per withdrawal&nbsp;:&nbsp;</span><span class="span-4">
+    				<input type="text" /></span>
+  			</div>
+          </div>
+          <div class="clear">&nbsp;</div>
+          <p class="fontBold">Status </p>
+          <div class="prepend-3  span-21 last">
+            <div class="span-20 "><span class="pull-3 span-8 rightAlign"><span class="red">* </span>Status&nbsp;:&nbsp;</span><span class="span-4">
+   					<select name="select" >
+      					<option >--Select--</option>
+                        <option >Active</option>
+                        <option >Inactive</option>
+				    </select></span>
+			</div>
+          </div>
+          <div class="clear">&nbsp;</div>
+          <p class="fontBold">Interest rate </p>
+          <div class="prepend-3  span-21 last">
+	      	<div class="span-20"><span class="pull-3 span-8 rightAlign"><span class="red">* </span>Interest rate&nbsp;:&nbsp;</span><span class="span-6">
+    				<input type="text" />&nbsp;(0 - 100)%</span>
+            
+            </div>
+            <div class="span-20 "><span class="pull-3 span-8 rightAlign"><span class="red">* </span>Balance used for Interest calculation&nbsp;:&nbsp;</span><span class="span-4">
+   					<select name="select">
+      					<option >--Select--</option>
+                        <option >Minimum Balance</option>
+                        <option >Average Balance</option>
+				    </select></span>
+			</div>
+            <div class="span-20 "><span class="pull-3 span-8 rightAlign"><span class="red">* </span>Time period for Interest calculation&nbsp;:&nbsp;</span>
+            	<span class="span-9">
+                	<span class="span-2"><input type="text" size="3" /></span>
+                    <span class="span-4">
+   					<select name="select">
+                        <option >Day(s)</option>
+                        <option >Month(s)</option>
+				    </select></span></span>
+			</div>
+            <div class="span-20 "><span class="pull-3 span-8 rightAlign"><span class="red">* </span> Frequency of Interest posting to accounts&nbsp;:&nbsp;</span>
+            	<span class="span-9">
+                	<span class="span-4"><input type="text" size="3" />&nbsp;&nbsp;Month(s)</span>
+			</div>
+            <div class="span-20 "><span class="pull-3 span-8 rightAlign">Minimum balance required for Interest calculation&nbsp;:&nbsp;</span><span class="span-4">
+    				<input type="text" /></span>
+  			</div>
+          </div>
+          <div class="clear">&nbsp;</div>
+          <p class="fontBold">Accounting </p>
+          <div class="prepend-3  span-21 last">
+            <div class="span-20 "><span class="pull-3 span-8 rightAlign"><span class="red">* </span>GL code for deposits&nbsp;:&nbsp;</span><span class="span-4">
+   					<select name="select" disabled="disabled">
+      					<option >--Select--</option>
+                        <option >24101</option>
+                        <option >4606</option>
+                        <option >23101</option>
+                        <option >4601</option>
+                        <option >4603</option>
+                        <option >4602</option>
+				    </select></span>
+			</div>
+            <div class="span-20 "><span class="pull-3 span-8 rightAlign"><span class="red">* </span>GL code for interest&nbsp;:&nbsp;</span>
+                    <span class="span-4">
+   					<select name="select" disabled="disabled">
+                    	<option >--Select--</option>
+                        <option >41101</option>
+                        <option >41102</option>
+				    </select></span>
+			</div>
+          </div>
+          <div class="clear">&nbsp;</div>
+          <hr />
+          <div class="prepend-9">
+            	<input class="buttn" type="button" name="preview" value="Preview" onclick="location.href='savingsProductPrev.html'"/>
+            	<input class="buttn2" type="button" name="cancel" value="Cancel" onclick="location.href='savingsProductDetails.html'"/>
+          </div>
+          <div class="clear">&nbsp;</div>
+	</div>
+   	</form> 
+  </div><!--Main Content Ends-->
+  <div class="footer">&nbsp;</div>
+</div><!--Container Ends-->
+</body>
+</html>

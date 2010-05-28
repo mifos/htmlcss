@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<!-- Framework CSS -->
+<link rel="stylesheet" href="css/maincss.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="css/screen.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="css/print.css" type="text/css" media="print" />
+<!--[if lt IE 8]><link rel="stylesheet" href="css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+</head>
+<body>
+<!-- Container Begins-->
+<div class="container">&nbsp;
+  <!--Header-->
+    <div class="topAlign append-1"><a href="yourSettings.html" title="Your Settings">Your Settings</a>&nbsp;|&nbsp;<a href="index.html">Log Out</a> </div>
+  <div><span class="logo"></span><span class="menu"><a href="home.html" class="tablightorange">Home</a><a href="clientsAcc.html" class="tablightorange">Clients and Accounts</a><a href="reports.html" class="tablightorange">Reports</a><a href="admin.html" class="taborange">Admin</a></span></div>
+  <div class="clear"></div>
+  <div class="orangeline">&nbsp;</div>
+    <!--  Left Sidebar Begins-->
+  <div class="sidebar ht750">
+    <p class="orangetab">Administrative Tasks</p>
+    <p class="paddingLeft"><span class="fontBold">Search by client name, system ID or account number</span><br />
+      <input type="text"  />
+      <br />
+      <input class="buttn" type="button" name="search" value="Search" onclick="location.href='searched.html'"/>
+    </p>
+  </div>
+  <!--  Left Sidebar Ends-->
+  <!--  Main Content Begins-->  
+  <div class=" content leftMargin180">
+  	<form method="" action="" name="formname">
+    <p class="font15"><span class="fontBold">Define new survey</span>&nbsp;-&nbsp;<span class="orangeheading">Review & submit</span></p>
+    <p>Review the information below. Click Submit if you are satisfied or click Edit to make changes. Click Cancel to return to Admin page without submitting information.</p>
+    <div class="span-24">
+    	<div class="fontBold">Survey information </div>
+            <div class="span-22">
+            	<div class="span-22">
+                	<span>Survey name&nbsp;:&nbsp;</span><span>&nbsp;</span>
+                </div>
+                <div class="span-22">
+                	<span>Survey applies to&nbsp;:&nbsp;</span><span>&nbsp;</span>
+                </div>
+                <div class="clear">&nbsp;</div>
+                <div class="span-22">
+                	<span><a href="printerVersion.html" target="_blank">Printer version</a></span>
+                </div>
+                <div class="clear">&nbsp;</div>
+            </div>
+            <div class="span-23">
+            	<p class="fontBold">Questions</p>
+            	<div class="bluedivs span-20 paddingLeft fontBold">
+                	<span class="span-4">Question Name</span>
+                    <span class="span-12">Question</span>
+                    <span class="span-3">Mandatory</span>
+                </div>
+                <div class="span-20 paddingLeft">
+                	<span class="span-4">Question Name</span>
+                    <span class="span-12">Question</span>
+                    <span class="span-3"><input type="checkbox" disabled="disabled" /></span>
+                </div>
+                <div class="clear">&nbsp;</div>
+                <div class="span-20">
+                	<input type="button" class="buttn2" name="edit" value="Edit survey information" onclick="location.href='surveyEdit.html'" />
+                </div>
+            </div>
+            <div class="clear span-20 borderbtm prepend-3">&nbsp;</div>
+            <div class="clear">&nbsp;</div>
+            <div class="span-23 prepend-10">
+            	<input type="button" class="buttn" value="Submit" name="submit" onclick="location.href='surveyDetails.html'" />
+                <input type="button" class="buttn2" value="Cancel" name="cancel" onclick="location.href='surveyDetails.html'" />
+            </div>
+            <div class="clear">&nbsp;</div>
+    </div>
+   	</form> 
+  </div><!--Main Content Ends-->
+  <div class="footer">&nbsp;</div>
+</div><!--Container Ends-->
+</body>
+</html>

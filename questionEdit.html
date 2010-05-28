@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<!-- Framework CSS -->
+<link rel="stylesheet" href="css/maincss.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="css/screen.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="css/print.css" type="text/css" media="print" />
+<!--[if lt IE 8]><link rel="stylesheet" href="css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+<script type="text/javascript" language="javascript">
+function enableRemv()
+{
+	document.getElementById("remv").style.display="block";
+}
+function disableRemv()
+{
+	document.getElementById("remv").style.display="none";
+}
+</script>
+</head>
+<body onload="disableRemv();">
+<!-- Container Begins-->
+<div class="container">&nbsp;
+  <!--Header-->
+    <div class="topAlign append-1"><a href="yourSettings.html" title="Your Settings">Your Settings</a>&nbsp;|&nbsp;<a href="index.html">Log Out</a> </div>
+  <div><span class="logo"></span><span class="menu"><a href="home.html" class="tablightorange">Home</a><a href="clientsAcc.html" class="tablightorange">Clients and Accounts</a><a href="reports.html" class="tablightorange">Reports</a><a href="admin.html" class="taborange">Admin</a></span></div>
+  <div class="clear"></div>
+  <div class="orangeline">&nbsp;</div>
+    <!--  Left Sidebar Begins-->
+  <div class="sidebar ht750">
+    <p class="orangetab">Administrative Tasks</p>
+    <p class="paddingLeft"><span class="fontBold">Search by client name, system ID or account number</span><br />
+      <input type="text"  />
+      <br />
+      <input class="buttn" type="button" name="search" value="Search" onclick="location.href='searched.html'"/>
+    </p>
+  </div>
+  <!--  Left Sidebar Ends-->
+  <!--  Main Content Begins-->  
+  <div class=" content leftMargin180">
+  	<form method="" action="" name="formname">
+  	<p class="bluedivs paddingLeft"><a href="admin.html">Admin</a>&nbsp;/&nbsp;<span class="fontBold">Edit Questions</span></p>
+    <p class="font15"><span class="fontBold">QuestionName</span>&nbsp;-&nbsp;<span class="orangeheading">Edit Question Information</span></p>
+    <div class="red">Note: Significant modifications of questions could affect reporting.</div>
+    <p>Complete the fields below. Then click Submit. Click Cancel to return to View question page without submitting information.</p>
+    <p>&nbsp;</p>
+    <div class="span-24">
+    	<div class="span-24 prepend-4">
+        	<span class="span-4 rightAlign">Question Name&nbsp;:&nbsp;</span>
+            <span class="span-4"><input type="text" /></span>
+        </div>
+        <div class="span-24 prepend-4">
+        	<span class="span-4 rightAlign">Question &nbsp;:&nbsp;</span>
+            <span class="span-4"><input type="text" /></span>
+        </div>
+        <div class="span-24 prepend-4">
+        	<span class="span-4 rightAlign">Status&nbsp;:&nbsp;</span>
+            <span class="span-4" >
+            					<select name="status">
+                                	<option>Active</option>
+                                    <option>Inactive</option>
+            					</select></span>
+        </div>
+        <div class="span-24 prepend-4">
+        	<span class="span-4 rightAlign">Answer type&nbsp;:&nbsp;</span>
+            <span class="span-4" >
+            					<select name="select" disabled="disabled">
+                                	<option>Multi Select</option>
+                                    <option>Free text</option>
+                                    <option>Number</option>
+                                    <option>Single select</option>
+                                    <option>Date</option>
+            					</select></span>
+        </div>
+        <div class="span-24 prepend-4">
+        	<span class="span-4 rightAlign">Answer choice&nbsp;:&nbsp;</span>
+            <span class="span-4"><input type="text" disabled="disabled"/></span>
+            <span class="span-4"><input type="button" class="buttn2" value="Add&gt;&gt;" onclick="enableRemv();" disabled="disabled"/></span>
+        </div>
+        <div>&nbsp;</div>
+    	<hr />
+    	<div>&nbsp;</div>
+    	<div class="span-24 prepend-8">
+    		<input type="button" class="buttn" value="Preview" onclick="location.href='questionPreview.html'" />
+        	<input type="button" class="buttn2" value="Cancel" onclick="location.href='questionDetails.html'" />
+    	</div>
+    </div>
+   	</form> 
+  </div><!--Main Content Ends-->
+  <div class="footer">&nbsp;</div>
+</div><!--Container Ends-->
+</body>
+</html>

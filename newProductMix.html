@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<!-- Framework CSS -->
+<link rel="stylesheet" href="css/maincss.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="css/screen.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="css/print.css" type="text/css" media="print" />
+<!--[if lt IE 8]><link rel="stylesheet" href="css/ie.css" type="text/css" media="screen, projection" /><![endif]-->
+<script type="text/javascript" language="javascript">
+function SecListBox(ListBox,text,value){
+	try{
+		var option=document.createElement("OPTION");
+		option.value=value;option.text=text;
+		ListBox.options.add(option)
+		}
+	catch(er){alert(er)}
+}
+function FirstListBox(){
+	try{
+		var count=document.getElementById("lstBox").options.length;
+		for(i=0;i<count;i++){
+			if(document.getElementById("lstBox").options[i].selected){
+				SecListBox(document.getElementById("ListBox1"),document.getElementById("lstBox").options[i].value,document.getElementById("lstBox").options[i].value);
+				document.getElementById("lstBox").remove(i);
+				break
+			}
+		}
+	}
+	catch(er){alert(er)}
+}
+function SortAllItems(){
+	var arr=new Array();
+	for(i=0;i<document.getElementById("lstBox").options.length;i++){
+		arr[i]=document.getElementById("lstBox").options[i].value
+	}
+	arr.sort();
+	RemoveAll();
+	for(i=0;i<arr.length;i++){
+		SecListBox(document.getElementById("lstBox"),arr[i],arr[i])
+	}
+}
+function RemoveAll(){
+	try{
+		document.getElementById("lstBox").options.length=0
+	}
+	catch(er){alert(er)}
+}
+function SecondListBox(){
+	try{
+		var count=document.getElementById("ListBox1").options.length;
+		for(i=0;i<count;i++){
+			if(document.getElementById("ListBox1").options[i].selected){
+				SecListBox(document.getElementById("lstBox"),document.getElementById("ListBox1").options[i].value,document.getElementById("ListBox1").options[i].value);
+				document.getElementById("ListBox1").remove(i);
+				break
+			}
+		}
+		SortAllItems()
+	}catch(er){alert(er)}
+}
+</script>
+</head>
+<body>
+<!-- Container Begins-->
+<div class="container">&nbsp;
+  <!--Header-->
+  <div class="topAlign append-1"><a href="yourSettings.html">Your Settings</a>&nbsp;|&nbsp;<a href="index.html">Log Out</a> </div>
+  <div><span class="logo"></span><span class="menu"><a href="home.html" class="tablightorange">Home</a><a href="clientsAcc.html" class="tablightorange">Clients and Accounts</a><a href="reports.html" class="tablightorange">Reports</a><a href="admin.html" class="taborange">Admin</a></span></div>
+  <div class="clear"></div>
+  <div class="orangeline">&nbsp;</div>
+  <!--  Main Content Begins-->
+  <div class="content marginAuto">
+    <div class="borders span-22">
+      <div class="borderbtm span-22">
+        <p class="span-15 arrowIMG orangeheading">Product mix information</p>
+        <p class="span-3 arrowIMG1 orangeheading last">Review & Submit</p>
+      </div>
+      <div class="subcontent ">
+        <form method="" action="" name="formname">
+          <p class="font15"><span class="fontBold">Add a new product mix</span>&nbsp;--&nbsp;<span class="orangeheading"> Enter product mix information</span></p>
+          <div>Complete the fields below. Then click Preview. Click Cancel to return to Admin without submitting information. </div>
+          <div><span class="red">* </span>Fields marked with an asterisk are required. </div>
+          <p class="error" id="error1">Errors..............</p>
+          <p class="fontBold">Product mix details </p>
+          <div class="prepend-3  span-21 last">
+        	<div class="span-20 "><span class="span-5 rightAlign"><span class="red">* </span>Product type&nbsp;:&nbsp;</span><span class="span-5">
+   					<select name="select">
+      					<option >--Select--</option>
+                        <option >Loans</option>
+				    </select></span>
+			</div>
+            <div class="span-20 "><span class="span-5 rightAlign"><span class="red">* </span>Product instance name&nbsp;:&nbsp;</span><span class="span-7">
+   					<select name="select">
+      					<option >--Select--</option>
+                        <option >a-loan</option>
+                        <option >Advance Interest</option>
+                        <option >Individual</option>
+				    </select></span>
+			</div>
+            <div class="span-20 last">
+          	<div class="span-20"><span class="pull-3 span-8 rightAlign">Remove not allowed products&nbsp;:&nbsp;</span>
+            	<span class="span-12 ">
+                	<span class="span-9">Click on a product in the right box to select. Then click Remove.</span>
+                    <span class="span-4">
+            			<select name="lstBox" id="lstBox" multiple="multiple" class="listSize">
+      						
+						</select></span>
+                    <span class="span-3"><br /><input class="buttn2" name="add" type="button" value="Add >>" /><br /><br />
+<input class="buttn2" name="remove" type="button" value="<< Remove" /></span>
+					<span class="span-4">
+            		<select name="ListBox1" id="ListBox1" multiple="multiple" class="listSize">
+						
+					</select></span>
+               	</span>
+            </div>
+          </div>
+          </div>
+          <div class="clear">&nbsp;</div>
+          <hr />
+          <div class="prepend-9">
+            	<input class="buttn" type="button" name="preview" value="Preview" onclick="location.href='newProductMixPreview.html'"/>
+            	<input class="buttn2" type="button" name="cancel" value="Cancel" onclick="location.href='admin.html'"/>
+          </div>
+          <div class="clear">&nbsp;</div>
+        </form>
+      </div>
+      <!--Subcontent Ends-->
+    </div>
+  </div>
+  <!--Main Content Ends-->
+  <div class="footer">&nbsp;</div>
+</div>
+<!--Container Ends-->
+</body>
+</html>

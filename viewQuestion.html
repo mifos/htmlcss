@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<!-- Framework CSS -->
+<link rel="stylesheet" href="css/maincss.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="css/screen.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="css/print.css" type="text/css" media="print" />
+<!--[if lt IE 8]><link rel="stylesheet" href="css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+<script type="text/javascript" language="javascript">
+function enableRemv()
+{
+	document.getElementById("remv").style.display="block";
+}
+function disableRemv()
+{
+	document.getElementById("remv").style.display="none";
+}
+</script>
+</head>
+<body onload="disableRemv();">
+<!-- Container Begins-->
+<div class="container">&nbsp;
+  <!--Header-->
+    <div class="topAlign append-1"><a href="yourSettings.html" title="Your Settings">Your Settings</a>&nbsp;|&nbsp;<a href="index.html">Log Out</a> </div>
+  <div><span class="logo"></span><span class="menu"><a href="home.html" class="tablightorange">Home</a><a href="clientsAcc.html" class="tablightorange">Clients and Accounts</a><a href="reports.html" class="tablightorange">Reports</a><a href="admin.html" class="taborange">Admin</a></span></div>
+  <div class="clear"></div>
+  <div class="orangeline">&nbsp;</div>
+    <!--  Left Sidebar Begins-->
+  <div class="sidebar ht750">
+    <p class="orangetab">Administrative Tasks</p>
+    <p class="paddingLeft"><span class="fontBold">Search by client name, system ID or account number</span><br />
+      <input type="text"  />
+      <br />
+      <input class="buttn" type="button" name="search" value="Search" onclick="location.href='searched.html'"/>
+    </p>
+  </div>
+  <!--  Left Sidebar Ends-->
+  <!--  Main Content Begins-->  
+  <div class=" content leftMargin180">
+  	<form method="" action="" name="formname">
+  	<p class="bluedivs paddingLeft"><a href="admin.html">Admin</a>&nbsp;/&nbsp;<span class="fontBold">View Questions </span></p>
+    <p class="font15 orangeheading">View Questions </p>
+	<div>Click on a question below to view details and make changes or <a href="defineQuestion.html">define a new question</a></div>
+    <p>Note: questions flagged as PPI may not be attached to general surveys.</p>
+	<div class="span-22">
+    	<span class="lightorange fontBold">You just added 1 new questions. </span>
+    	<div><a href="defineSurvey.html">Define new survey</a></div>
+    	<ul>
+    		<li type="circle"><a href="questionDetails.html">question1</a></li>
+    	</ul>
+    	<div class="clear"></div>
+    	<hr />
+    	<div class="prepend-7 span-21">
+    		<span class="span-3 silverheading">Previous</span>
+        	<span class="span-4 fontBold">Results 1-1 of 1</span>
+        	<span class="span-3 silverheading last">Next</span>
+    	</div>
+    </div>
+   	</form> 
+  </div><!--Main Content Ends-->
+  <div class="footer">&nbsp;</div>
+</div><!--Container Ends-->
+</body>
+</html>

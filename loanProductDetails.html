@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<!-- Framework CSS -->
+<link rel="stylesheet" href="css/maincss.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="css/screen.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="css/print.css" type="text/css" media="print" />
+<!--[if lt IE 8]><link rel="stylesheet" href="css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+</head>
+<body>
+<!-- Container Begins-->
+<div class="container">&nbsp;
+  <!--Header-->
+    <div class="topAlign append-1"><a href="yourSettings.html" title="Your Settings">Your Settings</a>&nbsp;|&nbsp;<a href="index.html">Log Out</a> </div>
+  <div><span class="logo"></span><span class="menu"><a href="home.html" class="tablightorange">Home</a><a href="clientsAcc.html" class="tablightorange">Clients and Accounts</a><a href="reports.html" class="tablightorange">Reports</a><a href="admin.html" class="taborange">Admin</a></span></div>
+  <div class="clear"></div>
+  <div class="orangeline">&nbsp;</div>
+    <!--  Left Sidebar Begins-->
+  <div class="sidebar ht950">
+    <p class="orangetab">Administrative Tasks</p>
+    <p class="paddingLeft fontBold">Search by client name, system ID or account number<br />
+      <input type="text"  />
+      <br />
+      <input class="buttn" type="button" name="search" value="Search" onclick="location.href='searched.html'"/>
+    </p>
+  </div>
+  <!--  Left Sidebar Ends-->
+  <!--  Main Content Begins-->  
+  <div class=" content leftMargin180">
+  	<form method="" action="" name="formname">
+    <div class="span-24">
+  		<div class="bluedivs paddingLeft"><a href="admin.html">Admin</a>&nbsp;/&nbsp;<a href="viewLoanProducts.html">View Loan Products</a>&nbsp;/&nbsp;<span class="fontBold">LoanProductName</span></div>
+        <div class="clear">&nbsp;</div>
+    	<div class="span-24 ">
+        	<div class="span-18 ">
+            	<span class="orangeheading">LoanProductName</span><br /><br />
+                <span><span><img src="images/status_activegreen.gif" /></span>&nbsp;<span>Active</span><br />
+        	</div>
+            <span class="span-5 rightAlign"><a href="loanProductEdit.html">Edit Loan product information</a></span>
+        </div>
+        <div class="clear">&nbsp;</div>
+        <p class="span-24 ">
+        	<div class="fontBold">Loan product details</div>
+            <div class="span-24 "><span>Product instance name:</span><span>&nbsp;</span></div>
+            <div class="span-24 "><span>Short name:</span><span>&nbsp;</span></div>
+            <div class="clear">&nbsp;</div>
+            <div class="span-24 "><span>Description:</span><br /><span>&nbsp;</span></div>
+            <div class="clear">&nbsp;</div>
+            <div class="span-24 "><span>Product category:</span><span>&nbsp;</span></div>
+            <div class="span-24 "><span>Start date:</span><span>&nbsp;</span></div>
+            <div class="span-24 "><span>End date:</span><span>&nbsp;</span></div>
+            <div class="span-24 "><span>Applicable for:</span><span>&nbsp;</span></div>
+            <div class="span-24 "><span>Include in Loan cycle counter:</span><span>&nbsp;</span></div>
+            <div class="span-24 "><span>Calculate Loan Amount as:</span><span>&nbsp;</span></div>
+            <div class="span-20 ">
+          		<div class="span-17 bluedivs fontBold paddingLeft">
+            		<span class="span-4">Min loan amount</span>
+                    <span class="span-4">Max loan amount</span>
+                	<span class="span-5 last">Default amount</span>
+            	</div>
+            	<div class="span-17 paddingLeft">
+                	<span class="span-4 ">&nbsp;</span>
+                	<span class="span-4 ">&nbsp;</span>
+                	<span class="span-5 last">&nbsp;</span>
+            	</div>
+          </div>
+        </p>
+        <p class="span-24 ">
+			<div class="fontBold span-24 ">Interest rate</div>
+            <div class="span-24 "><span>Interest rate type:</span><span>&nbsp;</span></div>
+            <div class="span-24 "><span>Max Interest rate:</span><span>&nbsp;</span></div>
+            <div class="span-24 "><span>Min Interest rate:</span><span>&nbsp;</span></div>
+            <div class="span-24 "><span>Default Interest rate:</span><span>&nbsp;</span></div>
+        </p>
+        <div class="clear">&nbsp;</div>
+        <p class="span-24 ">
+			<div class="fontBold span-24 ">Repayment Schedule</div>
+            <div class="clear">&nbsp;</div>
+            <div class="span-24 "><span>Frequency of installments:</span><span>&nbsp;</span></div>
+            <div class="span-24 "><span>Calculate # of installments as:</span><span>&nbsp;</span></div>
+			<div class="span-20 ">
+          		<div class="span-17 bluedivs fontBold paddingLeft">
+            		<span class="span-4">Min # of installments</span>
+                	<span class="span-4">Max # of installments</span>
+                	<span class="span-5 last">Default # of installments</span>
+            	</div>
+            	<div class="span-17 paddingLeft">
+                	<span class="span-4 ">&nbsp;</span>
+                	<span class="span-4 ">&nbsp;</span>
+                	<span class="span-5 last">&nbsp;</span>
+            	</div>
+          </div>
+          <div class="span-24 "><span>Grace period type:</span><span>&nbsp;</span></div>
+          <div class="span-24 "><span>Grace period duration:</span><span>&nbsp;</span></div>
+        </p> 
+        <p class="fontBold span-24 ">Fees</p>
+        <div class="clear">&nbsp;</div>       
+        <p class="span-24 ">
+			<div class="fontBold span-24 ">Accounting</div>
+            <div class="span-20 "><span>Sources of funds&nbsp;:&nbsp;</span><br /><span>&nbsp;</span>
+			</div>
+            <div class="span-20 "><span>Product GL code&nbsp;:&nbsp;</span></div>
+            <div class="span-20 "><span>Interest&nbsp;:&nbsp;</span>
+                    <span>&nbsp;</span>
+			</div>
+            <div class="span-20 "><span >Principal&nbsp;:&nbsp;</span>
+                    <span>&nbsp;</span>
+			</div>
+        </p>
+        <div class="clear">&nbsp;</div> 
+        <p class="span-24 ">
+            <div class="span-24 "><a href="loanProductLog.html">View Change Log</a></div>
+        </p>
+	</div>
+   	</form> 
+  </div><!--Main Content Ends-->
+  <div class="footer">&nbsp;</div>
+</div><!--Container Ends-->
+</body>
+</html>

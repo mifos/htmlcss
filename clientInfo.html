@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<!-- Framework CSS -->
+<link rel="stylesheet" href="css/maincss.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="css/screen.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="css/print.css" type="text/css" media="print" />
+<!--[if lt IE 8]><link rel="stylesheet" href="css/ie.css" type="text/css" media="screen, projection" /><![endif]-->
+</head>
+<body>
+<!-- Container Begins-->
+<div class="container">&nbsp;
+  <!--Header-->
+  <div class="topAlign append-1"><a href="yourSettings.html">Your Settings</a>&nbsp;|&nbsp;<a href="index.html">Log Out</a> </div>
+  <div><span class="logo"></span><span class="menu"><a href="home.html" class="tablightorange">Home</a><a href="clientsAcc.html" class="taborange">Clients and Accounts</a><a href="reports.html" class="tablightorange">Reports</a><a href="admin.html" class="tablightorange">Admin</a></span></div>
+  <div class="clear"></div>
+  <div class="orangeline">&nbsp;</div>
+  <!--  Main Content Begins-->
+  <div class="content marginAuto">
+    <div class="borders span-22">
+      <div class="borderbtm span-22">
+        <p class="span-6 completeIMG silverheading">Select Group/Branch office</p>
+        <p class="span-5 arrowIMG orangeheading ">Client Information</p>
+        <p class="span-4 arrowIMG1 orangeheading ">MFI Information</p>
+        <p class="span-3 arrowIMG1 orangeheading last">Review & Submit</p>
+      </div>
+      <div class="subcontent ">
+      <form method="" action="" name="formname">
+        <p class="font15"><span class="fontBold">Create new Client</span>&nbsp;--&nbsp;<span class="orangeheading">Enter personal information</span></p>
+        <div>Complete the fields below. Then click Continue. Click Cancel to return to Clients & Accounts without submitting information </div>
+        <div><span class="red">* </span>Fields marked with an asterisk are required. </div>
+        <p class="error" id="error1">Errors..............</p>
+		<p><span class="fontBold">Branch Office selected:</span><span> our office</span></p>
+        <p class="fontBold">Personal information</p>
+        <div class="prepend-1  span-22 last">
+        	<div class="span-21 "><span class="span-4 rightAlign"><span class="red">* </span>Salutation</span>&nbsp;:
+   					<select name="Salutation">
+      					<option >--Select--</option>
+                        <option >Ms</option>
+                        <option >Sir</option>
+                        <option >Mrs</option>
+                        <option >Mr</option>
+                        <option >sri</option>
+                        <option >frank</option>
+                        <option >Rev.</option>
+                        <option >Madam</option>
+                        <option >Cdr.</option>
+				    </select>
+			</div>
+            <div class="span-21 "><span class="span-4 rightAlign"><span class="red">* </span>First Name</span>&nbsp;:
+    				<input id="fname" name="fname" type="text" />
+  			</div>
+            <div class="span-21 "><span class="span-4 rightAlign">Middle Name</span>&nbsp;:
+    				<input id="mname" name="mname" type="text" />
+  			</div>
+            <div class="span-21 "><span class="span-4 rightAlign">Second Last Name</span>&nbsp;:
+    				<input id="slname" name="slname" type="text" />
+  			</div>
+            <div class="span-21 "><span class="span-4 rightAlign"><span class="red">* </span>Last Name</span>&nbsp;:
+    				<input id="lname" name="lname" type="text" />
+  			</div>
+            
+            <div class="span-21 "><span class="span-4 rightAlign">Government Id</span>&nbsp;:
+    				<input id="govtId" name="govtId" type="text" />
+  			</div>
+            <div class="span-10 last"><span class="span-4 rightAlign"><span class="red">* </span>Date Of Birth</span>&nbsp;:
+    				<input type="text" name="date" maxlength="2" size="1" />&nbsp;DD&nbsp;<input type="text" name="month" maxlength="2" size="1" />&nbsp;MM&nbsp;<input type="text" name="year" maxlength="4" size="3" />&nbsp;YYYY 
+            </div>
+            <div class="span-21 "><span class="span-4 rightAlign"><span class="red">* </span>Gender</span>&nbsp;:
+   					<select name="Gender">
+      					<option >--Select--</option>
+                        <option >Male</option>
+                        <option >Female</option>
+				    </select>
+			</div>
+            <div class="span-21 "><span class="span-4 rightAlign">Marital Status</span>&nbsp;:
+   					<select name="MaritalStatus">
+      					<option >--Select--</option>
+                        <option >Single</option>
+                        <option >Married</option>
+                        <option >Divorced</option>
+                        <option >Widowed</option>
+                        <option >Seperated</option>
+                        <option >Mrs</option>
+				    </select>
+			</div>
+            <div class="span-21 "><span class="span-4 rightAlign">Number Of Children</span>&nbsp;:
+    				<input type="text" />
+  			</div>
+            <div class="span-21 "><span class="span-4 rightAlign">Citizenship</span>&nbsp;:
+   					<select name="Citizenship">
+      					<option >--Select--</option>
+				    </select>
+			</div>
+            <div class="span-21 "><span class="span-4 rightAlign">Ethnicity</span>&nbsp;:
+   					<select name="Ethnicity">
+      					<option >--Select--</option>
+				    </select>
+			</div>
+            <div class="span-21 "><span class="span-4 rightAlign">Education Level</span>&nbsp;:
+   					<select name="EducationLevel">
+      					<option >--Select--</option>
+				    </select>
+			</div>
+            <div class="span-21 "><span class="span-4 rightAlign">Activities</span>&nbsp;:
+   					<select name="Activities">
+      					<option >--Select--</option>
+				    </select>
+			</div>
+            <div class="span-21 "><span class="span-4 rightAlign"><span class="red">*</span>Poverty Status</span>&nbsp;:
+   					<select name="PovertyStatus">
+      					<option >Poor</option>
+                        <option >Very poor</option>
+                        <option >Non-poor</option>
+				    </select>
+			</div>
+            <div class="span-21 "><span class="span-4 rightAlign">Handicapped</span>&nbsp;:
+   					<select name="Handicapped">
+      					<option >--Select--</option>
+				    </select>
+			</div>
+            <div class="span-21 "><span class="span-4 rightAlign">Photograph</span>&nbsp;:
+   					 <input type="file" name="choose" value="Choose File" />
+			</div>
+            <div class="span-21 "><span class="span-4 rightAlign"><span class="red">*</span>Spouse/Father Name&nbsp;:</span>
+   					<span class="span-4">Relationship<select name="Spouse/Father">
+      					<option >--Select--</option>
+                        <option >Spouse</option>
+                        <option >Father</option>
+				    </select></span>
+                    <span class="span-3 "><span class="red">*</span>First Name
+      					<input type="text" size="12" /></span>&nbsp;
+                    <span class="span-3 ">Middle Name
+      					<input type="text" size="12" /></span>&nbsp;
+                    <span class="span-3 ">Second Last Name
+      					<input type="text" size="12" /></span>&nbsp;
+                    <span class="span-3 "><span class="red">*</span>Last Name
+      					<input type="text" size="12"  /></span>     
+			</div>            
+        </div>
+        <p class="fontBold">Address</p>
+        <div class="prepend-1  span-21 last">
+        	<div class="span-20 "><span class="span-4 rightAlign">Address1</span>&nbsp;:
+    				<input id="address1" name="address1" type="text" />
+  			</div>
+            <div class="span-20 "><span class="span-4 rightAlign">Address2</span>&nbsp;:
+    				<input id="address2" name="address2" type="text" />
+  			</div>
+            <div class="span-20 "><span class="span-4 rightAlign">Address3</span>&nbsp;:
+    				<input id="address3" name="address3" type="text" />
+  			</div>
+            <div class="span-20 "><span class="span-4 rightAlign">City/District</span>&nbsp;:
+    				<input id="cityDistrict" name="cityDistrict" type="text" />
+  			</div>
+            <div class="span-20 "><span class="span-4 rightAlign">State</span>&nbsp;:
+    				<input id="state" name="state" type="text" />
+  			</div>
+            <div class="span-20 "><span class="span-4 rightAlign">Country</span>&nbsp;:
+    				<input id="country" name="country" type="text" />
+  			</div>
+            <div class="span-20 "><span class="span-4 rightAlign">Postal Code</span>&nbsp;:
+    				<input id="postalCode" name="postalCode" type="text" />
+  			</div>
+            <div class="span-20 "><span class="span-4 rightAlign">Telephone</span>&nbsp;:
+    				<input id="telephone" name="telephone" type="text" />
+  			</div>
+        </div>
+        
+        <div class="clear">&nbsp;</div>
+        <hr />
+        <div class="prepend-8">
+          <input class="buttn" type="button" name="continue" value="Continue" onclick="location.href='clientMFI.html'" />
+          <input class="buttn2" type="button" name="cancel" value="Cancel" onclick="location.href='clientsAcc.html'"/>
+        </div>
+        <div class="clear">&nbsp;</div>
+        </form>
+      </div><!--Subcontent Ends-->
+    </div>
+  </div>
+  <!--Main Content Ends-->
+  <div class="footer">&nbsp;</div>
+</div>
+<!--Container Ends-->
+</body>
+</html>

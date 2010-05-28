@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<!-- Framework CSS -->
+<link rel="stylesheet" href="css/maincss.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="css/screen.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="css/print.css" type="text/css" media="print" />
+<!--[if lt IE 8]><link rel="stylesheet" href="css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+<script type="text/javascript" language="javascript">
+
+function disableAll()
+	{
+	document.getElementById("sp1").style.display="none";
+	document.getElementById("sp2").style.display="none";
+	}
+function disp_text(value)
+   {
+   var w = value;
+   document.getElementById("txt").value=w;
+   var x=document.getElementById("mySelect");
+	if((x.options[x.selectedIndex].id=="op2")||(x.options[x.selectedIndex].id=="op3"))
+	{
+		document.getElementById("txt").disabled=true;
+		document.getElementById("sp1").style.display="block";
+		document.getElementById("sp2").style.display="none";
+	}
+	else if((x.options[x.selectedIndex].id=="op5")||(x.options[x.selectedIndex].id=="op5")||(x.options[x.selectedIndex].id=="op7")||(x.options[x.selectedIndex].id=="op8")||(x.options[x.selectedIndex].id=="op9")||(x.options[x.selectedIndex].id=="op10"))
+	{
+		document.getElementById("txt").disabled=false;
+		document.getElementById("sp2").style.display="block";
+		document.getElementById("sp1").style.display="none";
+	}
+	else
+	{
+		document.getElementById("txt").disabled=false;
+		document.getElementById("sp2").style.display="none";
+		document.getElementById("sp1").style.display="none";
+	}
+   }
+
+</script>
+</head>
+<body onload="disableAll();" >
+<!-- Container Begins-->
+<div class="container">&nbsp;
+  <!--Header-->
+    <div class="topAlign append-1"><a href="yourSettings.html" title="Your Settings">Your Settings</a>&nbsp;|&nbsp;<a href="index.html">Log Out</a> </div>
+  <div><span class="logo"></span><span class="menu"><a href="home.html" class="tablightorange">Home</a><a href="clientsAcc.html" class="taborange">Clients and Accounts</a><a href="reports.html" class="tablightorange">Reports</a><a href="admin.html" class="tablightorange">Admin</a></span></div>
+  <div class="clear"></div>
+  <div class="orangeline">&nbsp;</div>
+  <!--  Left Sidebar Begins-->
+  <div class="sidebar ht750">
+    <p class="orangetab">Clients & Accounts Tasks</p>
+    <p class="fontBold paddingLeft">Search by name, system ID or account number
+    <input type="text" /><input class="buttn" type="button" value="Search" onclick="location.href='searched.html'"/>
+    </p>
+    <p class="paddingLeft"><span class="fontBold">Manage Collection Sheets</span><br />
+      <a href="collectionData.html">Enter Collection Sheet Data</a> </p>
+    <p class="paddingLeft"><span class="fontBold">Create new Clients</span><br />
+      <a href="newCenter.html">Create new Center</a><br />
+      <a href="newGroup.html">Create new Group</a><br />
+      <a href="newClient.html">Create new Client</a> </p>
+    <p class="paddingLeft"><span class="fontBold">Create new Accounts</span><br />
+      <a href="newSavings.html">Create Savings account</a><br />
+      <a href="newLoan.html">Create Loan account</a><br />
+      <a href="multipleLoan.html">Create multiple Loan accounts</a> </p>
+    <p class="paddingLeft"><span class="fontBold">Manage account status</span><br />
+      <a href="status.html">Change account status</a> </p>
+  </div>
+  <!--  Left Sidebar Ends-->
+  <!--  Main Content Begins-->  
+  <div class=" content leftMargin180">
+  	<form method="" action="" name="formname">
+    <div class="span-24">
+  		<div class="bluedivs paddingLeft"><a href="branch1.html">Branch_Office_1</a>&nbsp;/&nbsp;<a href="center.html">Mycenter</a>&nbsp;/&nbsp;<a href="groupDetails.html">Mygroup</a>&nbsp;/&nbsp;<a href="clientDetails.html">Myclient 1</a>&nbsp;/&nbsp;<span class="fontBold">Super prestamos</span></div>
+        <div class="clear">&nbsp;</div>
+    	<div class="span-24">
+        	<div class="span-22 paddingLeft"><span class="font16 fontBold">Myclient 1</span>&nbsp;-&nbsp;<span class="font16 orangeheading"> Apply charges</span></div>
+        	<div class="span-20 paddingLeft">
+            <p class="error">Errprs...........</p>
+            	<div class="span-20 paddingLeft">
+                	<span class="span-3"><span class="red">*</span>Select charge type: </span>
+                    <span class="span-4">
+                    	<select name="mylist" id="mySelect" onchange="disp_text(this.value);">
+                        	<option>-Select-</option>
+                        	<option id="op1" value="5.0">Upfront Loan Fee</option>
+                            <option id="op2" value="1.0" >Periodic Loan Fee</option>
+                            <option id="op3" value="1.0" >Loan Insurance</option>
+                            <option id="op4" value="11.0">Loan Application Fee</option>
+                            <option id="op5" value="5.0" >Processing Fee</option>
+                            <option id="op6" value="13.0">Crap Fee</option>
+                            <option id="op7" value="7.0" >Tax</option>
+                            <option id="op8" value="2.0" >yangtestfee_1</option>
+                            <option id="op9" value="12.0" >training fee</option>
+                            <option id="op10" value="2.0">Loan Management Fee</option>
+                            <option id="op11" value="200.0">Insurance Fee</option>
+                            <option id="op12" value="">Misc Fee</option>
+                            <option id="op13" value="">Misc Penalty</option>
+                        </select>
+                    </span>
+                    <span class="span-2">Amount </span>
+                    <span class="span-4"><input type="text" name="amount" id="txt" /></span>
+                    <span class="span-4" id="sp1">Recur every 1 week(s) Formula: % Loan Amount</span>
+                    <span class="span-4" id="sp2">Formula: % Loan Amount</span>
+                </div>
+                <div class="clear">&nbsp;</div>
+                <hr />
+                <div class="span-23 prepend-8">
+                	<span><input type="button" class="buttn" value="Submit" onclick="location.href='Super_prestamos.html'"</span>
+                    <span><input type="button" class="buttn2" value="Cancel" onclick="location.href='Super_prestamos.html'"</span>
+                </div>
+            </div>            
+        </div>
+	</div>
+   	</form> 
+  </div><!--Main Content Ends-->
+  <div class="footer">&nbsp;</div>
+</div><!--Container Ends-->
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<!-- Framework CSS -->
+<link rel="stylesheet" href="css/maincss.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="css/screen.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="css/print.css" type="text/css" media="print" />
+<!--[if lt IE 8]><link rel="stylesheet" href="css/ie.css" type="text/css" media="screen, projection" /><![endif]-->
+</head>
+<body>
+<!-- Container Begins-->
+<div class="container">&nbsp;
+  <!--Header-->
+  <div class="topAlign append-1"><a href="yourSettings.html">Your Settings</a>&nbsp;|&nbsp;<a href="index.html">Log Out</a> </div>
+  <div><span class="logo"></span><span class="menu"><a href="home.html" class="tablightorange">Home</a><a href="clientsAcc.html" class="taborange">Clients and Accounts</a><a href="reports.html" class="tablightorange">Reports</a><a href="admin.html" class="tablightorange">Admin</a></span></div>
+  <div class="clear"></div>
+  <div class="orangeline">&nbsp;</div>
+  <!--  Main Content Begins-->
+  <div class="content marginAuto">
+    <div class="borders span-22">
+      <div class="borderbtm span-22">
+        <p class="span-5 completeIMG silverheading ">Select Customer</p>
+        <p class="span-5 arrowIMG orangeheading ">Loan account information</p>
+        <p class="span-5 arrowIMG1 orangeheading ">Review/edit installments</p>
+        <p class="span-3 arrowIMG1 orangeheading last">Review & Submit</p>
+      </div>
+      <div class="subcontent ">
+      <form method="" action="" name="formname">
+      	<div class="fontBold red">Note : You are redoing a loan account.</div>
+        <p class="font15"><span class="fontBold">Redo Loans Account</span>&nbsp;--&nbsp;<span class="orangeheading">Enter Loans account information</span></p>
+        <div>Complete the fields below. Then click Preview. Click Cancel to return to Clients & Accounts without submitting information </div>
+        <div><span class="red">* </span>Fields marked with an asterisk are required. </div>
+        <p class="error" id="error1">Errors..............</p>
+		<p><span class="fontBold">Account Owner : </span><span>Client1</span></p>
+        <p class="prepend-1  span-21 last">
+          <p class="span-21 prepend-3"><span class="span-4 rightAlign"><span class="red">* </span>Loans instance name</span>&nbsp;:
+          		<select name="loansInstance">
+      				<option >--Select--</option>
+                    <option >Education Loan</option>
+                    <option >Housing Loan</option>
+                    <option >Individual Loan</option>
+                    <option >Short-Term Loan</option>
+				</select>
+          </p>
+        </p>
+        <p class="fontBold">Loans Product Summary</p>
+        <div class="prepend-1  span-21 last">
+        	<div class="span-21 prepend-2 "><span class="span-4 rightAlign">Description</span><span>:&nbsp;</span>
+  			</div>
+            <div class="span-21 prepend-2 "><span class="span-4 rightAlign">Interest Rate Type</span><span>:&nbsp;</span>
+  			</div>
+            <div class="span-21 prepend-2 "><span class="span-4 rightAlign">Frequency of installments</span><span>:&nbsp;</span>
+  			</div>
+            <div class="span-21 prepend-2 "><span class="span-4 rightAlign">Principal due on last installment</span><span>:&nbsp;</span>
+  			</div>
+        </div>
+        <p class="fontBold">Account details</p>
+        <div class="prepend-1  span-21 last">
+        	<div class="span-21 prepend-2 "><span class="span-4 rightAlign"><span class="red">*</span>Amount</span><span>:&nbsp;<input id="amount" name="amount" type="text" /></span><span>(Allowed Amount:   200.0   -   1000.0 )</span>
+  			</div>
+            <div class="span-21 prepend-2 "><span class="span-4 rightAlign"><span class="red">*</span>Interest rate</span><span>:&nbsp;<input id="amount" name="amount" type="text" /></span><span>(Allowed Interest rate amount   24.0   -   24.0 %)</span>
+  			</div>
+            <div class="span-21 prepend-2 "><span class="span-4 rightAlign"><span class="red">*</span>No of installments</span><span>:&nbsp;<input id="amount" name="amount" type="text" /></span><span>(Allowed Number of Installments:   6   -   18 )</span>
+  			</div>
+            <div class="span-21 prepend-2 "><span class="span-4 rightAlign"><span class="red">*</span>Disbursal date</span><span>:&nbsp;<input type="text" name="date" maxlength="2" size="1" />&nbsp;DD&nbsp;<input type="text" name="month" maxlength="2" size="1" />&nbsp;MM&nbsp;<input type="text" name="year" maxlength="4" size="3" />&nbsp;YYYY </span>
+  			</div>
+            <div class="span-21 prepend-2 "><span class="span-4 rightAlign"><span class="red">*</span>Grace period for repayments</span><span>:&nbsp;<input id="amount" name="amount" type="text" /></span><span>Installments</span>
+  			</div>
+            <div class="span-21 prepend-2 "><span class="span-4 rightAlign">Source of fund</span><span>:
+            	<select name="sourceofFund">
+      				<option >--Select--</option>
+				</select></span>
+  			</div>
+            <div class="span-21 prepend-2 "><span class="span-4 rightAlign">Purpose of Loans</span><span>:
+            	<select name="purposeofLoan">
+      				<option >--Select--</option>
+				</select></span>
+  			</div>
+            <div class="span-21 prepend-2 "><span class="span-4 rightAlign"><span class="red">*</span>External Id</span><span>:&nbsp;<input id="amount" name="amount" type="text" /></span>
+            
+        </div>
+        <p class="fontBold">Administrative Set Fees</p>
+        <div class="span-21 prepend-2 ">
+        	<span class="span-4 rightAlign">Loan Insurance</span><span class="span-4">:&nbsp;1.0</span>
+        	<span class="span-6"><span class="span-2">Periodicity</span><span class="span-2">2 month(s)</span>
+            					 <span class="span-2">Formula&nbsp;:</span><span class="span-3">% Loan Amount</span>
+            </span>
+            <span class="span-4"><input  name="trained" type="checkbox" />Check to Remove</span>
+  		</div>
+        <div class="span-21 prepend-2 ">
+        	<span class="span-4 rightAlign">Loan Application Fee</span><span class="span-4">:&nbsp;<input type="text" value="11.0" size="10"/></span>
+        	<span class="span-6"><span class="span-2">Periodicity</span><span class="span-2">One time</span></span>
+            <span class="span-4"><input  name="trained" type="checkbox" />Check to Remove</span>
+  		</div>
+        <p class="fontBold">Apply Additional Fees</p>
+        <div class="prepend-1  span-21 last">
+            <div class="span-21 prepend-1 "><span class="span-4 rightAlign">Fee Type</span><span class="span-4">:
+            	<select name="purposeofLoan">
+      				<option >--Select--</option>
+				</select></span><span class="span-3 rightAlign">Amount</span><span class="span-5">:&nbsp;<input id="amount" name="amount" type="text" /></span>
+  			</div>
+            <div class="span-21 prepend-1 "><span class="span-4 rightAlign">Fee Type</span><span class="span-4">:
+            	<select name="purposeofLoan">
+      				<option >--Select--</option>
+				</select></span><span class="span-3 rightAlign">Amount</span><span class="span-5">:&nbsp;<input id="amount" name="amount" type="text" /></span>
+  			</div>
+            <div class="span-21 prepend-1 "><span class="span-4 rightAlign">Fee Type</span><span class="span-4">:
+            	<select name="purposeofLoan">
+      				<option >--Select--</option>
+				</select></span><span class="span-3 rightAlign">Amount</span><span class="span-5">:&nbsp;<input id="amount" name="amount" type="text" /></span>
+  			</div>
+        </div>
+        <div class="clear">&nbsp;</div>
+        <div class="prepend-8">
+          <input class="buttn" type="button" name="preview" value="Preview" onclick="location.href='loanReview.html'" />
+          <input class="buttn2" type="button" name="cancel" value="Cancel" onclick="location.href='clientsAcc.html'"/>
+        </div>
+        <div class="clear">&nbsp;</div>
+        </form>
+      </div><!--Subcontent Ends-->
+    </div>
+  </div>
+  <!--Main Content Ends-->
+  <div class="footer">&nbsp;</div>
+</div>
+<!--Container Ends-->
+</body>
+</html>

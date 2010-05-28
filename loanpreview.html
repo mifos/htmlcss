@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<!-- Framework CSS -->
+<link rel="stylesheet" href="css/maincss.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="css/screen.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="css/print.css" type="text/css" media="print" />
+<!--[if lt IE 8]><link rel="stylesheet" href="css/ie.css" type="text/css" media="screen, projection" /><![endif]-->
+</head>
+<body>
+<!-- Container Begins-->
+<div class="container">&nbsp;
+  <!--Header-->
+  <div class="topAlign append-1"><a href="yourSettings.html">Your Settings</a>&nbsp;|&nbsp;<a href="index.html">Log Out</a> </div>
+  <div><span class="logo"></span><span class="menu"><a href="home.html" class="tablightorange">Home</a><a href="clientsAcc.html" class="taborange">Clients and Accounts</a><a href="reports.html" class="tablightorange">Reports</a><a href="admin.html" class="tablightorange">Admin</a></span></div>
+  <div class="clear"></div>
+  <div class="orangeline">&nbsp;</div>
+  <!--  Main Content Begins-->
+  <div class="content marginAuto">
+    <div class="borders span-22">
+      <div class="borderbtm span-22">
+        <p class="span-5 completeIMG silverheading ">Select Customer</p>
+        <p class="span-5 completeIMG silverheading ">Loan account information</p>
+        <p class="span-5 completeIMG silverheading ">Review/edit installments</p>
+        <p class="span-3 arrowIMG orangeheading last">Review & Submit</p>
+      </div>
+      <div class="subcontent ">
+        <p class="font15"><span class="fontBold">Create Loans Account</span>&nbsp;--&nbsp;<span class="orangeheading">Preview Loans account information</span></p>
+        <p>Review the information below. Click Submit if you are satisfied or click Edit to make changes. Click Cancel to return to Clients & Accounts without submitting information.</p>
+		<form method="" action="" name="formname">
+		<div><span class="fontBold">Account Owner :</span><span>&nbsp;</span></div><br />
+		<div class="orangeheading">Loans account information</div><br />
+		<div><span class="fontBold">Loans instance name :</span><span>&nbsp;</span></div><br />
+		<div class="fontBold">Instance information</span><span>&nbsp;</span></div>                   
+        <p><span>Description :</span><span>&nbsp;</span></p>
+       	<div class="span-20 "><span class="fontBold">Interest Rate Type</span><span>:&nbsp;</span>
+  		</div>
+        <div class="span-20 "><span class="fontBold">Frequency of Installments</span><span>:&nbsp;</span>
+  		</div>
+        <div class="span-20 "><span class="fontBold">Principal due on last installment</span><span>:&nbsp;</span>
+  		</div>
+        <div class="span-20 "><span class="fontBold">Grace Period Type</span><span>:&nbsp;</span>
+  		</div><br /><br />
+        <div class="span-20 "><span class="fontBold">Amount</span><span>:&nbsp;</span>
+  		</div>
+        <div class="span-20 "><span class="fontBold">Interest rate</span><span>:&nbsp;</span>
+  		</div>
+        <div class="span-20 "><span class="fontBold">No of installments</span><span>:&nbsp;</span>
+  		</div>
+		<p class="span-20 "><span class="fontBold">Disbursal date</span><span>:&nbsp;</span>
+  		</p>
+        <div class="span-20 "><span class="fontBold">Grace period for repayments</span><span>:&nbsp;</span>
+  		</div>
+        <div class="span-20 "><span class="fontBold">Source of fund</span><span>:&nbsp;</span>
+  		</div>
+        <div class="span-20 "><span class="fontBold">Interest deducted at disbursement</span><span>:&nbsp;</span>
+  		</div>
+        <div class="span-20 "><span class="fontBold">Purpose of Loans</span><span>:&nbsp;</span>
+  		</div>
+        <div class="span-20 "><span class="fontBold">External Id</span><span>:&nbsp;</span>
+  		</div><br />
+        <div class="span-20 "><span class="fontBold">Charges Applied</span>
+  		</div>
+        <div class="span-20 "><span class="fontBold">Loan Application Fee Amount</span><span>:&nbsp;</span>
+  		</div>
+        <div class="span-20 "><span class="fontBold">Loan Insurance Amount</span><span>:&nbsp;</span>
+  		</div><br />
+        <p class="orangeheading">Installments</p>
+        <div class="span-20 paddingLeft">
+        	<p align="center" class="font15 paddingLeft fontBold borderbtm">Amount due</p>
+            <div class="borderbtm span-20"><span class="span-3 fontBold">Installment</span><span class="span-4 fontBold">DueDate</span><span class="span-3 fontBold">Principal</span><span class="span-3 fontBold">Interest</span><span class="span-3 fontBold">Fees</span><span class="span-3 fontBold">Total</span>
+            </div>
+            <div class="borderbtm span-20"><span class="span-3 ">1</span><span class="span-4 ">05-Apr-2010</span><span class="span-3 ">41.7</span><span class="span-3 ">2.3</span><span class="span-3 ">5.0</span><span class="span-3 ">49.0</span>
+            </div>
+        </div>
+		<div class="clear">&nbsp;</div>
+        <input class="buttn2" type="button" name="cancel" value="Edit account information" onclick="location.href='loanAccInfo.html'"/>
+        <div class="clear">&nbsp;</div>
+        <hr />
+        <div class="prepend-7">
+        	<input class="buttn" type="button" name="save" value="Save For Later" onclick="location.href='loanSave.html'" />
+          	<input class="buttn" type="button" name="approve" value="Submit For Approval" onclick="location.href='loanSave.html'" />
+          	<input class="buttn2" type="button" name="cancel" value="Cancel" onclick="location.href='clientsAcc.html'"/>
+        </div>
+        <div class="clear">&nbsp;</div>
+        </form>
+      </div><!--Subcontent Ends-->
+    </div>
+  </div>
+  <!--Main Content Ends-->
+  <div class="footer">&nbsp;</div>
+</div>
+<!--Container Ends-->
+</body>
+</html>

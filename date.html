@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<SCRIPT language="JavaScript" type="text/javascript">
+var dt = new Date();
+var y  = dt.getYear();
+var m = dt.getMonth()+1;
+
+// Y2K compliant
+if (y < 1000) y +=1900;
+
+//document.write(dayNames[dt.getDay()] + ", " + monthNames[dt.getMonth()] + " " + dt.getDate() + ", " + y);
+document.write(dt.getDate()+"/"+m+"/"+y);
+
+</SCRIPT>
+
+</head>
+
+<body>
+<!--<SCRIPT LANGUAGE="JavaScript1.2">
+
+<!-- This script and many more are available free online at -->
+<!-- The JavaScript Source!! http://javascript.internet.com -->
+
+<!-- Begin
+var months=new Array(13);
+months[1]="January";
+months[2]="February";
+months[3]="03";
+months[4]="April";
+months[5]="May";
+months[6]="June";
+months[7]="July";
+months[8]="August";
+months[9]="September";
+months[10]="October";
+months[11]="November";
+months[12]="December";
+var time=new Date();
+var lmonth=months[time.getMonth() + 1];
+var date=time.getDate();
+var year=time.getYear();
+if (year < 2000)
+year = year + 1900;
+document.write("<center>" + lmonth + " ");
+document.write(date + ", " + year + "</center>");
+// End 
+</SCRIPT>
+</CENTER>
+
+<p><center>
+<font face="arial, helvetica" size="-2">Free JavaScripts provided<br>
+by <a href="http://javascriptsource.com">The JavaScript Source</a></font>
+</center><p>-->
+</body>
+</html>

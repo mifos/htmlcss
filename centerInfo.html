@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<!-- Framework CSS -->
+<link rel="stylesheet" href="css/maincss.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="css/screen.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="css/print.css" type="text/css" media="print" />
+<!--[if lt IE 8]><link rel="stylesheet" href="css/ie.css" type="text/css" media="screen, projection" /><![endif]-->
+</head>
+<body>
+<!-- Container Begins-->
+<div class="container">&nbsp;
+  <!--Header-->
+  <div class="topAlign append-1"><a href="yourSettings.html">Your Settings</a>&nbsp;|&nbsp;<a href="index.html">Log Out</a> </div>
+  <div><span class="logo"></span><span class="menu"><a href="home.html" class="tablightorange">Home</a><a href="clientsAcc.html" class="taborange">Clients and Accounts</a><a href="reports.html" class="tablightorange">Reports</a><a href="admin.html" class="tablightorange">Admin</a></span></div>
+  <div class="clear"></div>
+  <div class="orangeline">&nbsp;</div>
+  <!--  Main Content Begins-->
+  <div class="content marginAuto">
+    <div class="borders span-22">
+      <div class="borderbtm span-22">
+        <p class="span-8 completeIMG silverheading">Choose Branch Office</p>
+        <p class="span-7 arrowIMG orangeheading ">Center Information</p>
+        <p class="span-3 arrowIMG1 orangeheading last">Review & Submit</p>
+      </div>
+      <div class="subcontent ">
+      <form method="" action="" name="formname">
+        <p class="font15"><span class="fontBold">Create New Center</span>&nbsp;--&nbsp;<span class="orangeheading">Enter Center Information</span></p>
+        <div>Complete the fields below. Then click Preview. Click Cancel to return to Clients & Accounts without submitting information.</div>
+        <div><span class="red">* </span>Fields marked with an asterisk are required. </div>
+        <p class="error" id="error1">Errors..............</p>
+		<p><span class="fontBold">Branch Office Selected:</span><span> our office</span></p>
+        <p class="fontBold">Current details</p>
+        <div class="prepend-3  span-21 last">
+        	<div class="span-20 "><span class="span-3 rightAlign"><span class="red">* </span>Name</span>&nbsp;:
+    				<input id="name" name="name" type="text" />
+  			</div>
+            <div class="span-20 "><span class="span-3 rightAlign"><span class="red">* </span>Loan Officer</span>&nbsp;:
+   					<select name="select">
+      					<option >--Select--</option>
+                        <option >Shankar</option>
+				    </select>
+			</div>
+            <div class="span-20 "><span class="span-3 rightAlign"><span class="red">* </span>Meeting schedule</span>&nbsp;:
+    				<a href="scheduleMeeting.html">Schedule Meeting</a>
+  			</div>
+            <div class="span-20 "><span class="span-3 rightAlign">External Id</span>&nbsp;:
+    				<input id="externalId" name="externalId" type="text" />
+                    <span >Useful if necessary to cross-reference a client within a system used prior to Mifos</span>
+  			</div>
+            <div class="span-10 last"><span class="span-3 rightAlign"><span class="red">* </span>MFI joining date</span>&nbsp;:
+    				<input type="text" name="date" maxlength="2" size="1" />&nbsp;DD&nbsp;<input type="text" name="month" maxlength="2" size="1" />&nbsp;MM&nbsp;<input type="text" name="year" maxlength="4" size="3" />&nbsp;YYYY 
+            </div>
+        </div>
+        <p class="fontBold">Address</p>
+        <div class="prepend-3  span-21 last">
+        	<div class="span-20 "><span class="span-3 rightAlign">Address1</span>&nbsp;:
+    				<input id="address1" name="address1" type="text" />
+  			</div>
+            <div class="span-20 "><span class="span-3 rightAlign">Address2</span>&nbsp;:
+    				<input id="address2" name="address2" type="text" />
+  			</div>
+            <div class="span-20 "><span class="span-3 rightAlign">Address3</span>&nbsp;:
+    				<input id="address3" name="address3" type="text" />
+  			</div>
+            <div class="span-20 "><span class="span-3 rightAlign">City/District</span>&nbsp;:
+    				<input id="cityDistrict" name="cityDistrict" type="text" />
+  			</div>
+            <div class="span-20 "><span class="span-3 rightAlign">State</span>&nbsp;:
+    				<input id="state" name="state" type="text" />
+  			</div>
+            <div class="span-20 "><span class="span-3 rightAlign">Country</span>&nbsp;:
+    				<input id="country" name="country" type="text" />
+  			</div>
+            <div class="span-20 "><span class="span-3 rightAlign">Postal Code</span>&nbsp;:
+    				<input id="postalCode" name="postalCode" type="text" />
+  			</div>
+            <div class="span-20 "><span class="span-3 rightAlign">Telephone</span>&nbsp;:
+    				<input id="telephone" name="telephone" type="text" />
+  			</div>
+        </div>
+        <p class="fontBold">Apply additional fees</p>
+        <div class="prepend-3  span-21 last">
+            <div class="span-12 "><span class="span-3 rightAlign">Fee Type</span>&nbsp;:
+   					<select name="select">
+      					<option >--Select--</option>
+				    </select>
+			</div>
+            <div class="span-7 pull-3"><span class="span-2 rightAlign">Amount</span>&nbsp;:
+    				<input id="amount" name="amount" type="text" />
+  			</div>
+            <div class="span-12 "><span class="span-3 rightAlign">Fee Type</span>&nbsp;:
+   					<select name="select">
+      					<option >--Select--</option>
+				    </select>
+			</div>
+            <div class="span-7 pull-3"><span class="span-2 rightAlign">Amount</span>&nbsp;:
+    				<input id="amount" name="amount" type="text" />
+  			</div>
+            <div class="span-12 "><span class="span-3 rightAlign">Fee Type</span>&nbsp;:
+   					<select name="select">
+      					<option >--Select--</option>
+				    </select>
+			</div>
+            <div class="span-7 pull-3"><span class="span-2 rightAlign">Amount</span>&nbsp;:
+    				<input id="amount" name="amount" type="text" />
+  			</div>
+        </div>
+        <div class="clear">&nbsp;</div>
+        <hr />
+        <div class="prepend-8">
+          <input class="buttn" type="button" name="preview" value="Preview" onclick="location.href='centerInfoReview.html'"/>
+          <input class="buttn2" type="button" name="cancel" value="Cancel" onclick="location.href='clientsAcc.html'"/>
+        </div>
+        <div class="clear">&nbsp;</div>
+        </form>
+      </div><!--Subcontent Ends-->
+    </div>
+  </div>
+  <!--Main Content Ends-->
+  <div class="footer">&nbsp;</div>
+</div>
+<!--Container Ends-->
+</body>
+</html>

@@ -1,0 +1,820 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<!-- Framework CSS -->
+<link rel="stylesheet" href="css/maincss.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="css/screen.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="css/print.css" type="text/css" media="print" />
+<!--[if lt IE 8]><link rel="stylesheet" href="css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+<script type="text/javascript" language="javascript" >
+function chkBox(){
+	 checkbox=document.getElementsByName("id");
+	if(document.getElementById("chk1").checked == true){
+	for (i = 0; i < checkbox.length; i++) {
+		checkbox[i].checked = true;
+	}
+	}
+	if(document.getElementById("chk1").checked == false){
+	 checkbox=document.getElementsByName("id");
+		for (i = 0; i < checkbox.length; i++) {
+			checkbox[i].checked = false;
+		}
+	}
+	
+	
+}
+</script>
+</head>
+<body onload="displayNone();">
+<!-- Container Begins-->
+<div class="container">&nbsp;
+  <!--Header-->
+  <div class="topAlign append-1"><a href="yourSettings.html" title="Your Settings">Your Settings</a>&nbsp;|&nbsp;<a href="index.html">Log Out</a> </div>
+  <div><span class="logo"></span><span class="menu"><a href="home.html" class="tablightorange">Home</a><a href="clientsAcc.html" class="tablightorange">Clients and Accounts</a><a href="reports.html" class="tablightorange">Reports</a><a href="admin.html" class="taborange">Admin</a></span></div>
+  <div class="clear"></div>
+  <div class="orangeline">&nbsp;</div>
+    <!--  Left Sidebar Begins-->
+  <div class="sidebar ht4100">
+    <p class="orangetab">Administrative Tasks</p>
+    <p class="paddingLeft fontBold">Search by client name, system ID or account number<br />
+      <input type="text"  />
+      <br />
+      <input class="buttn" type="button" name="search" value="Search" onclick="location.href='searched.html'" />
+    </p>
+  </div>
+  <!--  Left Sidebar Ends-->
+  <!--  Main Content Begins-->  
+  <div class=" content leftMargin180">
+  	<form method="" action="" name="formname">
+    <div class="span-24">
+  		<div class="span-22 bluedivs paddingLeft"><a href="admin.html">Admin</a>&nbsp;/&nbsp;<a href="roles&permissions.html">Roles and permissions</a></div>
+        <div class="clear">&nbsp;</div>
+        <p class="font15"><span class=" orangeheading">Add new role</span></p>
+        <div class="error">Please specify a Role Name.</div>
+        <div><span>Role Name : </span><span><input type="text" name="roleName" /></span></div>
+        <div class="clear">&nbsp;</div>
+        <div class="span-22 borders">
+        	<div class="span-22 bluediv">
+            	<span><input type="checkbox" /></span><span>Organization Management</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-2 rightAlign"><input type="checkbox" /></span><span class="span-10 borderrt">Funds</span>
+                <span class="span-8">Funds</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can create funds</span>
+                <span class="span-8">Can create funds</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can modify funds</span>
+                <span class="span-8">Can modify funds</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-2 rightAlign"><input type="checkbox" /></span><span class="span-10 borderrt">Fees</span>
+                <span class="span-8">Fees</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can define new fee type</span>
+                <span class="span-8">Can define new fee type</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can modify fee information</span>
+                <span class="span-8">Can modify fee information</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-2 rightAlign"><input type="checkbox" /></span><span class="span-10 borderrt">Checklists</span>
+                <span class="span-8">Checklists</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can define new checklist type</span>
+                <span class="span-8">Can define new checklist type</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can modify checklist information</span>
+                <span class="span-8">Can modify checklist information</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-2 rightAlign"><input type="checkbox" /></span><span class="span-10 borderrt">Can define Accepted Payment Type</span>
+                <span class="span-8">Can define Accepted Payment Type</span>
+            </div>
+        </div>
+        <div class="clear">&nbsp;</div>
+		<!--Second Table Starts-->
+        <div class="span-22 borders">
+        	<div class="span-22 bluediv">
+            	<span><input type="checkbox" /></span><span>Office management</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-2 rightAlign"><input type="checkbox" /></span><span class="span-10 borderrt">Offices</span>
+                <span class="span-8">Offices</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can create new office</span>
+                <span class="span-8">Can create new office</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can modify office information</span>
+                <span class="span-8">Can modify office information</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-2 rightAlign"><input type="checkbox" /></span><span class="span-10 borderrt">Can modify office hierarchy</span>
+                <span class="span-8">Can modify office hierarchy</span>
+            </div>
+        </div>
+        <!--Third Table Starts-->
+        <div class="clear">&nbsp;</div>
+        <div class="span-22 borders">
+        	<div class="span-22 bluediv">
+            	<span><input type="checkbox" /></span><span>User management</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-2 rightAlign"><input type="checkbox" /></span><span class="span-10 borderrt">Personnel</span>
+                <span class="span-8">Personnel</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can create new system users</span>
+                <span class="span-8">Can create new system users</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can modify user information</span>
+                <span class="span-8">Can modify user information</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can unlock a user</span>
+                <span class="span-8">Can unlock a user</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can edit self information</span>
+                <span class="span-8">Can edit self information</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can Add Notes to Personnel</span>
+                <span class="span-8">Can Add Notes to Personnel</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-2 rightAlign"><input type="checkbox" /></span><span class="span-10 borderrt">Roles</span>
+                <span class="span-8">Roles</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can create new role</span>
+                <span class="span-8">Can create new role</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can modify a role</span>
+                <span class="span-8">Can modify a role</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can delete a role</span>
+                <span class="span-8">Can delete a role</span>
+            </div>
+        </div>
+        <!--Fourth Table Starts-->
+        <div class="clear">&nbsp;</div>
+        <div class="span-22 borders">
+        	<div class="span-22 bluediv">
+            	<span><input type="checkbox" /></span><span>Client Management</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-2 rightAlign"><input type="checkbox" /></span><span class="span-10 borderrt">Clients</span>
+                <span class="span-8">Clients</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can create new Client in save for later state</span>
+                <span class="span-8">Can create new Client in save for later state</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can create new Client in submit for approval state</span>
+                <span class="span-8">Can create new Client in submit for approval state</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can change state to partial application</span>
+                <span class="span-8">Can change state to partial application</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can change state to active</span>
+                <span class="span-8">Can change state to active</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can change state to Cancelled</span>
+                <span class="span-8">Can change state to Cancelled</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can change state to On Hold</span>
+                <span class="span-8">Can change state to On Hold</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can change state to Closed</span>
+                <span class="span-8">Can change state to Closed</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can change state to application pending approval</span>
+                <span class="span-8">Can change state to application pending approval</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can make payments to Client accounts</span>
+                <span class="span-8">Can make payments to Client accounts</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can make adjustment entries to Client account</span>
+                <span class="span-8">Can make adjustment entries to Client account</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can waive a due amount</span>
+                <span class="span-8">Can waive a due amount</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can remove fee types from Client account</span>
+                <span class="span-8">Can remove fee types from Client account</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can add notes to Client</span>
+                <span class="span-8">Can add notes to Client</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can edit MFI information</span>
+                <span class="span-8">Can edit MFI information</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can edit group membership</span>
+                <span class="span-8">Can edit group membership</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can edit office membership</span>
+                <span class="span-8">Can edit office membership</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can edit meeting schedule</span>
+                <span class="span-8">Can edit meeting schedule</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can add/edit historical data</span>
+                <span class="span-8">Can add/edit historical data</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can edit fee amount attached to the account</span>
+                <span class="span-8">Can edit fee amount attached to the account</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can Blacklist a Client</span>
+                <span class="span-8">Can Blacklist a Client</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can specify meeting schedule</span>
+                <span class="span-8">Can specify meeting schedule</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can edit personal information</span>
+                <span class="span-8">Can edit personal information</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can apply charges to Client accounts</span>
+                <span class="span-8">Can apply charges to Client accounts</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can remove clients from groups</span>
+                <span class="span-8">Can remove clients from groups</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can add an existing client to a group</span>
+                <span class="span-8">Can add an existing client to a group</span>
+            </div>
+            
+            <div class="span-22 borderbtm">
+            	<span class="span-2 rightAlign"><input type="checkbox" /></span><span class="span-10 borderrt">Groups</span>
+                <span class="span-8">Groups</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can create new group in save for later state</span>
+                <span class="span-8">Can create new group in save for later state</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can create new group in submit for approval state</span>
+                <span class="span-8">Can create new group in submit for approval state</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can change state to partial application</span>
+                <span class="span-8">Can change state to partial application</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can change state to active</span>
+                <span class="span-8">Can change state to active</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can change state to Cancelled</span>
+                <span class="span-8">Can change state to Cancelled</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can change state to On Hold</span>
+                <span class="span-8">Can change state to On Hold</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can change state to Closed</span>
+                <span class="span-8">Can change state to Closed</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can change state to application pending approval</span>
+                <span class="span-8">Can change state to application pending approval</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can make payments to group accounts</span>
+                <span class="span-8">Can make payments to group accounts</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can make adjustment entries to group account</span>
+                <span class="span-8">Can make adjustment entries to group account</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can waive a due amount</span>
+                <span class="span-8">Can waive a due amount</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can remove fee types from group account</span>
+                <span class="span-8">Can remove fee types from group account</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can add notes to group</span>
+                <span class="span-8">Can add notes to group</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can edit Group information</span>
+                <span class="span-8">Can edit Group information</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can edit Center Clientship</span>
+                <span class="span-8">Can edit Center Clientship</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can edit office membership</span>
+                <span class="span-8">Can edit office membership</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can edit meeting schedule</span>
+                <span class="span-8">Can edit meeting schedule</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can add/edit historical data</span>
+                <span class="span-8">Can add/edit historical data</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can edit fee amount attached to the account</span>
+                <span class="span-8">Can edit fee amount attached to the account</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can Blacklist a group</span>
+                <span class="span-8">Can Blacklist a group</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can specify meeting schedule</span>
+                <span class="span-8">Can specify meeting schedule</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can apply charges to group accounts</span>
+                <span class="span-8">Can apply charges to group accounts</span>
+            </div>
+            
+            <div class="span-22 borderbtm">
+            	<span class="span-2 rightAlign"><input type="checkbox" /></span><span class="span-10 borderrt">Centers</span>
+                <span class="span-8">Centers</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can create new Center</span>
+                <span class="span-8">Can create new Center</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can modify Center information</span>
+                <span class="span-8">Can modify Center information</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can edit Center status</span>
+                <span class="span-8">Can edit Center status</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can make payments to Center accounts</span>
+                <span class="span-8">Can make payments to Center accounts</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can make adjustment entries to Center account</span>
+                <span class="span-8">Can make adjustment entries to Center account</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can waive a due amount</span>
+                <span class="span-8">Can waive a due amount</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can remove fee types from Center account</span>
+                <span class="span-8">Can remove fee types from Center account</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can add notes to Center records</span>
+                <span class="span-8">Can add notes to Center records</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can edit fee amount attached to the account</span>
+                <span class="span-8">Can edit fee amount attached to the account</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can edit meeting schedule</span>
+                <span class="span-8">Can edit meeting schedule</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can specify meeting schedule</span>
+                <span class="span-8">Can specify meeting schedule</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can apply charges to Center accounts</span>
+                <span class="span-8">Can apply charges to Center accounts</span>
+            </div>
+        </div>
+        <div class="clear">&nbsp;</div>
+		<!--Fifth Table Starts-->
+        <div class="span-22 borders">
+        	<div class="span-22 bluediv">
+            	<span><input type="checkbox" /></span><span>Product definition</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-2 rightAlign"><input type="checkbox" /></span><span class="span-10 borderrt">Product Categories</span>
+                <span class="span-8">Product Categories</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can define new product categories</span>
+                <span class="span-8">Can define new product categories</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can edit product category information</span>
+                <span class="span-8">Can edit product category information</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can modify lateness/dormancy definition</span>
+                <span class="span-8">Can modify lateness/dormancy definition</span>
+            </div>
+            
+            <div class="span-22 borderbtm">
+            	<span class="span-2 rightAlign"><input type="checkbox" /></span><span class="span-10 borderrt">Loan Products</span>
+                <span class="span-8">Loan Products</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can define new loan product instance</span>
+                <span class="span-8">Can define new loan product instance</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can edit loan product instances</span>
+                <span class="span-8">Can edit loan product instances</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-2 rightAlign"><input type="checkbox" /></span><span class="span-10 borderrt">Savings Products</span>
+                <span class="span-8">Savings Products</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can define new Savings product instance</span>
+                <span class="span-8">Can define new Savings product instance</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can edit Savings product instances</span>
+                <span class="span-8">Can edit Savings product instances</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-2 rightAlign"><input type="checkbox" /></span><span class="span-10 borderrt">Product Mix</span>
+                <span class="span-8">Product Mix</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can define product mix</span>
+                <span class="span-8">Can define product mix</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can edit product mix</span>
+                <span class="span-8">Can edit product mix</span>
+            </div>
+            
+        </div>
+        <div class="clear">&nbsp;</div>
+		<!--Sixth Table Starts-->
+        <div class="span-22 borders">
+        	<div class="span-22 bluediv">
+            	<span><input type="checkbox" /></span><span>Loan management</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-2 rightAlign"><input type="checkbox" /></span><span class="span-10 borderrt">Loan Processing</span>
+                <span class="span-8">Loan Processing</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can create new loan account in Save for later state</span>
+                <span class="span-8">Can create new loan account in Save for later state</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can create new loan account in Submit for approval state</span>
+                <span class="span-9">Can create new loan account in Submit for approval state</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can change state to partial application</span>
+                <span class="span-8">Can change state to partial application</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can change state to Approved</span>
+                <span class="span-8">Can change state to Approved</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can change state to Cancelled</span>
+                <span class="span-8">Can change state to Cancelled</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can change state to Disbursed to LO</span>
+                <span class="span-8">Can change state to Disbursed to LO</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can change state to pending approval</span>
+                <span class="span-8">Can change state to pending approval</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can change state to Closed- Written off</span>
+                <span class="span-8">Can change state to Closed- Written off</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can change state to Closed-rescheduled</span>
+                <span class="span-8">Can change state to Closed-rescheduled</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can edit Loan account information</span>
+                <span class="span-8">Can edit Loan account information</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can add notes to loan account</span>
+                <span class="span-8">Can add notes to loan account</span>
+            </div>
+            
+            <div class="span-22 borderbtm">
+            	<span class="span-2 rightAlign"><input type="checkbox" /></span><span class="span-10 borderrt">Loan Transactions</span>
+                <span class="span-8">Loan Transactions</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can make payment to the account</span>
+                <span class="span-8">Can make payment to the account</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can make adjustment entry to the account</span>
+                <span class="span-8">Can make adjustment entry to the account</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can waive penalty</span>
+                <span class="span-8">Can waive penalty</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can waive a fee installment</span>
+                <span class="span-8">Can waive a fee installment</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can remove fee types attached to the account</span>
+                <span class="span-8">Can remove fee types attached to the account</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can apply charges to loans</span>
+                <span class="span-8">Can apply charges to loans</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can repay loan</span>
+                <span class="span-8">Can repay loan</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can disburse loan</span>
+                <span class="span-8">Can disburse loan</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can adjust payment when account status is "closed-obligation met"</span>
+                <span class="span-9">Can adjust payment when account status is "closed-obligation met"</span>
+            </div>
+            
+            <div class="span-22 borderbtm">
+            	<span class="span-2 rightAlign"><input type="checkbox" /></span><span class="span-10 borderrt">Can reverse Loan disbursals</span>
+                <span class="span-8">Can reverse Loan disbursals</span>
+            </div>
+
+            <div class="span-22 borderbtm">
+            	<span class="span-2 rightAlign"><input type="checkbox" /></span><span class="span-10 borderrt">Can redo Loan disbursals</span>
+                <span class="span-8">Can redo Loan disbursals</span>
+            </div>
+        </div>
+        <div class="clear">&nbsp;</div>
+		<!--Seventh Table Starts-->
+        <div class="span-22 borders">
+        	<div class="span-22 bluediv">
+            	<span><input type="checkbox" /></span><span>Savings Management</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-2 rightAlign"><input type="checkbox" /></span><span class="span-10 borderrt">Can create new Savings account in Save for later state</span>
+                <span class="span-8">Can create new Savings account in Save for later state</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-2 rightAlign"><input type="checkbox" /></span><span class="span-10 borderrt">Can update Savings account</span>
+                <span class="span-8">Can update Savings account</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-2 rightAlign"><input type="checkbox" /></span><span class="span-10 borderrt">Can close Savings account</span>
+                <span class="span-8">Can close Savings account</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-2 rightAlign"><input type="checkbox" /></span><span class="span-10 borderrt">Can change state to partial application</span>
+                <span class="span-8">Can change state to partial application</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-2 rightAlign"><input type="checkbox" /></span><span class="span-10 borderrt">Can change state to pending approval</span>
+                <span class="span-8">Can change state to pending approval</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-2 rightAlign"><input type="checkbox" /></span><span class="span-10 borderrt">Can change state to cancel</span>
+                <span class="span-8">Can change state to cancel</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-2 rightAlign"><input type="checkbox" /></span><span class="span-10 borderrt">Can change state to active</span>
+                <span class="span-8">Can change state to active</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-2 rightAlign"><input type="checkbox" /></span><span class="span-10 borderrt">Can change state to inactive</span>
+                <span class="span-8">Can change state to inactive</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-2 rightAlign"><input type="checkbox" /></span><span class="span-10 borderrt">Can blacklist Savings account</span>
+                <span class="span-8">Can blacklist Savings account</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-2 rightAlign"><input type="checkbox" /></span><span class="span-10 borderrt">Can create new Savings account in submit for approval state</span>
+                <span class="span-9">Can create new Savings account in submit for approval state</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-2 rightAlign"><input type="checkbox" /></span><span class="span-10 borderrt">Can do adjustments for savings account</span>
+                <span class="span-8">Can do adjustments for savings account</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-2 rightAlign"><input type="checkbox" /></span><span class="span-10 borderrt">Can waive due deposits for Savings account</span>
+                <span class="span-8">Can waive due deposits for Savings account</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-2 rightAlign"><input type="checkbox" /></span><span class="span-10 borderrt">Can waive over due deposits for Savings account</span>
+                <span class="span-8">Can waive over due deposits for Savings account</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-2 rightAlign"><input type="checkbox" /></span><span class="span-10 borderrt">Can make deposit/withdrawal to savings account</span>
+                <span class="span-8">Can make deposit/withdrawal to savings account</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-2 rightAlign"><input type="checkbox" /></span><span class="span-10 borderrt">Can add notes to Savings account</span>
+                <span class="span-8">Can add notes to Savings account</span>
+            </div>
+        </div>
+        <div class="clear">&nbsp;</div>
+		<!--Eight Table Starts-->
+        <div class="span-22 borders">
+        	<div class="span-22 bluediv">
+            	<span><input type="checkbox" /></span><span>Reports Management</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-2 rightAlign"><input type="checkbox" /></span><span class="span-10 borderrt">Client Detail</span>
+                <span class="span-8">Client Detail</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Can view Collection Sheet Report</span>
+                <span class="span-8">Can view Collection Sheet Report</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-2 rightAlign"><input type="checkbox" /></span><span class="span-10 borderrt">Center</span>
+                <span class="span-8">Center</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-2 rightAlign"><input type="checkbox" /></span><span class="span-10 borderrt">Status</span>
+                <span class="span-8">Status</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-2 rightAlign"><input type="checkbox" /></span><span class="span-10 borderrt">Performance</span>
+                <span class="span-8">Performance</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-2 rightAlign"><input type="checkbox" /></span><span class="span-10 borderrt">Loan Product Detail</span>
+                <span class="span-8">Loan Product Detail</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-2 rightAlign"><input type="checkbox" /></span><span class="span-10 borderrt">Analysis</span>
+                <span class="span-8">Analysis</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Permissions-CanViewBranchCashConfirmationReport</span>
+                <span class="span-8">Permissions-CanViewBranchCashConfirmationReport</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-3 rightAlign"><input type="checkbox" /></span><span class="span-9 borderrt">Permissions-CanViewBranchProgressReport</span>
+                <span class="span-8">Permissions-CanViewBranchProgressReport</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-2 rightAlign"><input type="checkbox" /></span><span class="span-10 borderrt">Miscellaneous</span>
+                <span class="span-8">Miscellaneous</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-2 rightAlign"><input type="checkbox" /></span><span class="span-10 borderrt">Can upload report template</span>
+                <span class="span-8">Can upload report template</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-2 rightAlign"><input type="checkbox" /></span><span class="span-10 borderrt">Can view reports</span>
+                <span class="span-8">Can view reports</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-2 rightAlign"><input type="checkbox" /></span><span class="span-10 borderrt">Can edit report information</span>
+                <span class="span-8">Can edit report information</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-2 rightAlign"><input type="checkbox" /></span><span class="span-10 borderrt">Can define new report category</span>
+                <span class="span-8">Can define new report category</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-2 rightAlign"><input type="checkbox" /></span><span class="span-10 borderrt">Can view report category</span>
+                <span class="span-8">Can view report category</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-2 rightAlign"><input type="checkbox" /></span><span class="span-10 borderrt">Can delete report category</span>
+                <span class="span-8">Can delete report category</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-2 rightAlign"><input type="checkbox" /></span><span class="span-10 borderrt">Can download report template</span>
+                <span class="span-8">Can download report template</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-2 rightAlign"><input type="checkbox" /></span><span class="span-10 borderrt">Can upload admin documents</span>
+                <span class="span-8">Can upload admin documents</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-2 rightAlign"><input type="checkbox" /></span><span class="span-10 borderrt">Can view admin documents</span>
+                <span class="span-8">Can view admin documents</span>
+            </div>
+        </div>
+        <div class="clear">&nbsp;</div>
+		<!--Ninth Table Starts-->
+        <div class="span-22 borders">
+        	<div class="span-22 bluediv">
+            	<span><input type="checkbox" /></span><span>Bulk</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-2 rightAlign"><input type="checkbox" /></span><span class="span-10 borderrt">Can approve loans in bulk</span>
+                <span class="span-8">Can approve loans in bulk</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-2 rightAlign"><input type="checkbox" /></span><span class="span-10 borderrt">Can Enter Collection Sheet Data</span>
+                <span class="span-8">Can Enter Collection Sheet Data</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-2 rightAlign"><input type="checkbox" /></span><span class="span-10 borderrt">Can create multiple Loan accounts</span>
+                <span class="span-8">Can create multiple Loan accounts</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-2 rightAlign"><input type="checkbox" /></span><span class="span-10 borderrt">Can import transactions</span>
+                <span class="span-8">Can import transactions</span>
+            </div>
+        </div>
+        <div class="clear">&nbsp;</div>
+		<!--Tenth Table Starts-->
+        <div class="span-22 borders">
+        	<div class="span-22 bluediv">
+            	<span><input type="checkbox" /></span><span>Configuration Management</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-2 rightAlign"><input type="checkbox" /></span><span class="span-10 borderrt">Can define labels</span>
+                <span class="span-8">Can define labels</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-2 rightAlign"><input type="checkbox" /></span><span class="span-10 borderrt">Can define hidden/mandatory fields</span>
+                <span class="span-8">Can define hidden/mandatory fields</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-2 rightAlign"><input type="checkbox" /></span><span class="span-10 borderrt">Can Define Lookup Values</span>
+                <span class="span-8">Can Define Lookup Values</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-2 rightAlign"><input type="checkbox" /></span><span class="span-10 borderrt">Can define custom fields</span>
+                <span class="span-8">Can define custom fields</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-2 rightAlign"><input type="checkbox" /></span><span class="span-10 borderrt">Can view organization settings</span>
+                <span class="span-8">Can view organization settings</span>
+            </div>
+        </div>
+        <div class="clear">&nbsp;</div>
+		<!--Eleventh Table Starts-->
+        <div class="span-22 borders">
+        	<div class="span-22 bluediv">
+            	<span><input type="checkbox" /></span><span>System information</span>
+            </div>
+            <div class="span-22 borderbtm">
+            	<span class="span-2 rightAlign"><input type="checkbox" /></span><span class="span-10 borderrt">Can view system information</span>
+                <span class="span-8">Can view system information</span>
+            </div>
+        </div>
+        <div class="clear">&nbsp;</div>
+        <div class="prepend-9">
+            <input class="buttn " type="button" name="submit" value="Submit" onclick="location.href='roles&permissions.html'"/>
+            <input class="buttn2" type="button" name="cancel" value="Cancel" onclick="location.href='roles&permissions.html'"/>
+        </div>
+		<!--End of All Tables-->
+	</div>
+   	</form> 
+  </div><!--Main Content Ends-->
+  <div class="footer">&nbsp;</div>
+</div><!--Container Ends-->
+</body>
+</html>

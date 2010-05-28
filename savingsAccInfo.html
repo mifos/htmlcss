@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<!-- Framework CSS -->
+<link rel="stylesheet" href="css/maincss.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="css/screen.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="css/print.css" type="text/css" media="print" />
+<!--[if lt IE 8]><link rel="stylesheet" href="css/ie.css" type="text/css" media="screen, projection" /><![endif]-->
+</head>
+<body>
+<!-- Container Begins-->
+<div class="container">&nbsp;
+  <!--Header-->
+  <div class="topAlign append-1"><a href="yourSettings.html">Your Settings</a>&nbsp;|&nbsp;<a href="index.html">Log Out</a> </div>
+  <div><span class="logo"></span><span class="menu"><a href="home.html" class="tablightorange">Home</a><a href="clientsAcc.html" class="taborange">Clients and Accounts</a><a href="reports.html" class="tablightorange">Reports</a><a href="admin.html" class="tablightorange">Admin</a></span></div>
+  <div class="clear"></div>
+  <div class="orangeline">&nbsp;</div>
+  <!--  Main Content Begins-->
+  <div class="content marginAuto">
+    <div class="borders span-22">
+      <div class="borderbtm span-22">
+        <p class="span-8 completeIMG silverheading">Select customer</p>
+        <p class="span-7 arrowIMG orangeheading ">Savings account information</p>
+        <p class="span-3 arrowIMG1 orangeheading last">Review & submit</p>
+      </div>
+      <div class="subcontent ">
+      <form method="" action="" name="formname">
+        <p class="font15"><span class="fontBold">Create Savings Account</span>&nbsp;--&nbsp;<span class="orangeheading">Enter Savings account information</span></p>
+        <div>Complete the fields below. Then click Preview. Click Cancel to return to Clients & Accounts without submitting information </div>
+        <div><span class="red">* </span>Fields marked with an asterisk are required. </div>
+        <p class="error" id="error1">Errors..............</p>
+		<p><span class="fontBold">Account Owner : </span><span>Client1</span></p>
+        <p class="prepend-1  span-21 last">
+          <p class="span-21 prepend-3"><span class="span-7 rightAlign"><span class="red">* </span>Savings instance name</span>&nbsp;:
+          		<select name="savingsInstance">
+      				<option >--Select--</option>
+                    <option >Daily Savings</option>
+                    <option >Family Savings Account</option>
+                    <option >Individual Savings Account</option>
+                    <option >Savings No Interest</option>
+				</select>
+          </p>
+        </p>
+        <p class="fontBold">Savings product summary</p>
+        <div class="prepend-1  span-21 last">
+        	<div class="span-21 prepend-2 "><span class="span-7 rightAlign">Description</span><span>:&nbsp;</span>
+  			</div>
+            <div class="span-21 prepend-2 "><span class="span-7 rightAlign">Type of deposits</span><span>:&nbsp;</span>
+  			</div>
+            <div class="span-21 prepend-2 "><span class="span-7 rightAlign">Max ammount for withdrawal</span><span>:&nbsp;</span>
+  			</div>
+            <div class="span-21 prepend-2 "><span class="span-7 rightAlign">Balance used for interest rate calculation</span><span>:&nbsp;</span>
+  			</div>
+            <div class="span-21 prepend-2 "><span class="span-7 rightAlign">Time period for interest rate calculation</span><span>:&nbsp;</span>
+  			</div>
+            <div class="span-21 prepend-2 "><span class="span-7 rightAlign">Frequency of interest posting to accounts</span><span>:&nbsp;</span>
+  			</div>
+            <div class="span-21 prepend-2 "><span class="span-7 rightAlign">Min balance required for Interest rate calculation</span><span>:&nbsp;</span>
+  			</div>
+            <div class="span-21 prepend-2 "><span class="span-7 rightAlign">Interest rate</span><span>:&nbsp;</span>
+  			</div>
+
+        </div>
+        <p class="fontBold">Savings account details/p>
+        <div class="prepend-1  span-21 last">
+        	<div class="span-21 prepend-2 "><span class="span-7 rightAlign">Recommended amount for deposit</span><span>:&nbsp;<input id="amount" name="amount" type="text" /></span>
+  			</div>
+        </div>
+        <div class="clear">&nbsp;</div>
+        <hr />
+        <div class="prepend-9">
+          <input class="buttn" type="button" name="preview" value="Preview" onclick="location.href='savingsReview.html'" />
+          <input class="buttn2" type="button" name="cancel" value="Cancel" onclick="location.href='clientsAcc.html'"/>
+        </div>
+        <div class="clear">&nbsp;</div>
+        </form>
+      </div><!--Subcontent Ends-->
+    </div>
+  </div>
+  <!--Main Content Ends-->
+  <div class="footer">&nbsp;</div>
+</div>
+<!--Container Ends-->
+</body>
+</html>

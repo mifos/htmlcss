@@ -1,0 +1,180 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<!-- Framework CSS -->
+<link rel="stylesheet" href="css/maincss.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="css/screen.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="css/print.css" type="text/css" media="print" />
+<!--[if lt IE 8]><link rel="stylesheet" href="css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+<script type="text/javascript">
+//list boxes code
+function SecListBox(ListBox,text,value){
+	try{
+		var option=document.createElement("OPTION");
+		option.value=value;option.text=text;
+		ListBox.options.add(option)
+		}
+	catch(er){alert(er)}
+}
+function FirstListBox(){
+	try{
+		var count=document.getElementById("lstBox").options.length;
+		for(i=0;i<count;i++){
+			if(document.getElementById("lstBox").options[i].selected){
+				SecListBox(document.getElementById("ListBox1"),document.getElementById("lstBox").options[i].value,document.getElementById("lstBox").options[i].value);
+				document.getElementById("lstBox").remove(i);
+				break
+			}
+		}
+	}
+	catch(er){alert(er)}
+}
+function SortAllItems(){
+	var arr=new Array();
+	for(i=0;i<document.getElementById("lstBox").options.length;i++){
+		arr[i]=document.getElementById("lstBox").options[i].value
+	}
+	arr.sort();
+	RemoveAll();
+	for(i=0;i<arr.length;i++){
+		SecListBox(document.getElementById("lstBox"),arr[i],arr[i])
+	}
+}
+function RemoveAll(){
+	try{
+		document.getElementById("lstBox").options.length=0
+	}
+	catch(er){alert(er)}
+}
+function SecondListBox(){
+	try{
+		var count=document.getElementById("ListBox1").options.length;
+		for(i=0;i<count;i++){
+			if(document.getElementById("ListBox1").options[i].selected){
+				SecListBox(document.getElementById("lstBox"),document.getElementById("ListBox1").options[i].value,document.getElementById("ListBox1").options[i].value);
+				document.getElementById("ListBox1").remove(i);
+				break
+			}
+		}
+		SortAllItems()
+	}catch(er){alert(er)}
+}
+</script>
+</head>
+<body>
+<!-- Container Begins-->
+<div class="container">&nbsp;
+  <!--Header-->
+  <div class="topAlign append-1"><a href="yourSettings.html" title="Your Settings">Your Settings</a>&nbsp;|&nbsp;<a href="index.html">Log Out</a> </div>
+  <div><span class="logo"></span><span class="menu"><a href="home.html" class="tablightorange">Home</a><a href="clientsAcc.html" class="tablightorange">Clients and Accounts</a><a href="reports.html" class="tablightorange">Reports</a><a href="admin.html" class="taborange">Admin</a></span></div>
+  <div class="clear"></div>
+  <div class="orangeline">&nbsp;</div>
+  <!--  Left Sidebar Begins-->
+  <div class="sidebar ht750">
+    <p class="orangetab">Administrative Tasks</p>
+    <p class="paddingLeft fontBold">Search by client name, system ID or account number<br />
+      <input type="text"  />
+      <br />
+      <input class="buttn" type="button" name="search" value="Search" onclick="location.href='searched.html'"/>
+    </p>
+  </div>
+  <!--  Left Sidebar Ends-->
+  <!--  Main Content Begins-->
+  <div class=" content leftMargin180">
+    <form method="" action="" name="formname">
+      <div class="span-24">
+        <div class="bluedivs paddingLeft"><a href="admin.html">Admin</a>&nbsp;/&nbsp;<span class="fontBold">Define Accepted Payment Types</span></div>
+        <div class="clear">&nbsp;</div>
+        <p class="font15"><span class="orangeheading">Define Accepted Payment Types</span></p>
+        <div>Specify the accepted payment types below. Click on a payment type in the left box to select. Then click Add.</div>
+        <p>To remove, click on a payment type on the right box to select. Then click remove.</p>
+        <p class="fontBold">Clients / Groups / Centers</p>
+        <div class="span-22 last"> 
+        	<div class="span-21 prepend-3 "><span class="span-4 rightAlign">Fees : </span><span class="span-4">
+            	<select name="lstBox" id="lstBox" multiple="multiple" class="listSize">
+      					
+					</select></span>
+                    <span class="span-3"><br /><input class="buttn2" name="add" type="button" value="Add >>" onclick="FirstListBox();" /><br /><br />
+<input class="buttn2" name="remove" type="button" value="<< Remove" onclick="SecondListBox();" /></span>
+					<span class="span-4">
+            		<select name="ListBox1" id="ListBox1" multiple="multiple" class="listSize">
+						<option >Cash</option>
+                        <option >Voucher</option>
+                        <option >Cheque</option>
+					</select></span>
+            </div>
+    	</div>
+        <p class="span-21 fontBold">Loans :</p>
+        <div class="span-22 last"> 
+        	<div class="span-21 prepend-3 "><span class="span-4 rightAlign">Disbursements : </span><span class="span-4">
+            	<select name="lstBox" id="lstBox" multiple="multiple" class="listSize">
+      					
+					</select></span>
+                    <span class="span-3"><br /><input class="buttn2" name="add" type="button" value="Add >>" onclick="FirstListBox();" /><br /><br />
+<input class="buttn2" name="remove" type="button" value="<< Remove" onclick="SecondListBox();" /></span>
+					<span class="span-4">
+            		<select name="ListBox1" id="ListBox1" multiple="multiple" class="listSize">
+						<option >Cash</option>
+                        <option >Voucher</option>
+                        <option >Cheque</option>
+					</select></span>
+            </div>
+            <div class="span-21 prepend-3 "><span class="span-4 rightAlign">Repayments : </span><span class="span-4">
+            	<select name="lstBox" id="lstBox" multiple="multiple" class="listSize">
+                
+					</select></span>
+                    <span class="span-3"><br /><input class="buttn2" name="add" type="button" value="Add >>" onclick="FirstListBox();" /><br /><br />
+<input class="buttn2" name="remove" type="button" value="<< Remove" onclick="SecondListBox();" /></span>
+					<span class="span-4">
+            		<select name="ListBox1" id="ListBox1" multiple="multiple" class="listSize">
+						<option >Cash</option>
+                        <option >Voucher</option>
+                        <option >Cheque</option>
+					</select></span>
+            </div>
+    	</div>
+        <p class="span-21 fontBold">Savings :</p>
+        <div class="span-22 last"> 
+        	<div class="span-21 prepend-3 "><span class="span-4 rightAlign">Withdrawals : </span><span class="span-4">
+            	<select name="lstBox" id="lstBox" multiple="multiple" class="listSize">
+      					<option >Voucher</option>
+                        <option >Cheque</option>
+					</select></span>
+                    <span class="span-3"><br /><input class="buttn2" name="add" type="button" value="Add >>" onclick="FirstListBox();" /><br /><br />
+<input class="buttn2" name="remove" type="button" value="<< Remove" onclick="SecondListBox();" /></span>
+					<span class="span-4">
+            		<select name="ListBox1" id="ListBox1" multiple="multiple" class="listSize">
+						<option >Cash</option>
+					</select></span>
+            </div>
+            <div class="span-21 prepend-3 "><span class="span-4 rightAlign">Deposits : </span><span class="span-4">
+            	<select name="lstBox" id="lstBox" multiple="multiple" class="listSize">
+      					
+					</select></span>
+                    <span class="span-3"><br /><input class="buttn2" name="add" type="button" value="Add >>" onclick="FirstListBox();" /><br /><br />
+<input class="buttn2" name="remove" type="button" value="<< Remove" onclick="SecondListBox();" /></span>
+					<span class="span-4">
+            		<select name="ListBox1" id="ListBox1" multiple="multiple" class="listSize">
+						<option >Cash</option>
+                        <option >Voucher</option>
+                        <option >Cheque</option>
+					</select></span>
+            </div>
+    	</div>
+        <hr />
+        <div class="clear">&nbsp;</div>
+        <div class="prepend-10">
+            <input class="buttn" type="button" name="submit" value="Submit" onclick="location.href='admin.html'"/>
+            <input class="buttn2" type="button" name="cancel" value="Cancel" onclick="location.href='admin.html'"/>
+        </div>
+      </div>
+    </form>
+  </div>
+  <!--Main Content Ends-->
+  <div class="footer">&nbsp;</div>
+</div>
+<!--Container Ends-->
+</body>
+</html>
